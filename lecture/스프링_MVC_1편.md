@@ -8,7 +8,7 @@
 
 3. [서블릿, JSP, MVC 패턴](https://github.com/kyh1126/TIL/blob/main/lecture/%EC%8A%A4%ED%94%84%EB%A7%81_MVC_1%ED%8E%B8/3_%EC%84%9C%EB%B8%94%EB%A6%BF%2CJSP%2CMVC%ED%8C%A8%ED%84%B4.md)
 
-4. [MVC 프레임워크 만들기]()
+4. [MVC 프레임워크 만들기](https://github.com/kyh1126/TIL/blob/main/lecture/%EC%8A%A4%ED%94%84%EB%A7%81_MVC_1%ED%8E%B8/4_MVC_%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC_%EB%A7%8C%EB%93%A4%EA%B8%B0.md)
 
 5. [스프링 MVC - 구조 이해]()
 
