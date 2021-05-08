@@ -10,7 +10,7 @@
 
 4. [MVC 프레임워크 만들기](https://github.com/kyh1126/TIL/blob/main/lecture/%EC%8A%A4%ED%94%84%EB%A7%81_MVC_1%ED%8E%B8/4_MVC_%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC_%EB%A7%8C%EB%93%A4%EA%B8%B0.md)
 
-5. [스프링 MVC - 구조 이해]()
+5. [스프링 MVC - 구조 이해](https://github.com/kyh1126/TIL/blob/main/lecture/%EC%8A%A4%ED%94%84%EB%A7%81_MVC_1%ED%8E%B8/5_%EC%8A%A4%ED%94%84%EB%A7%81_MVC-%EA%B5%AC%EC%A1%B0_%EC%9D%B4%ED%95%B4.md)
 
 
 - [Notion link](https://www.notion.so/MVC-1-5422e9f6df2a44b38dad055d4c9340fd)
