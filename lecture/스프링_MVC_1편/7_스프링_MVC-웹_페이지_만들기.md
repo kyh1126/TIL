@@ -563,7 +563,7 @@
         <div class="row">
             <div class="col">
                 <button class="w-100 btn btn-primary btn-lg" onclick="location.href='editForm.html'"
-                        th:onclick="|location.href='@{/basic/items/{itemId}/ edit(itemId=${item.id})}'|" type="button">상품 수정
+                        th:onclick="|location.href='@{/basic/items/{itemId}/edit(itemId=${item.id})}'|" type="button">상품 수정
                 </button>
             </div>
             <div class="col">
@@ -603,7 +603,7 @@
             <h2>상품 등록 폼</h2>
         </div>
         <h4 class="mb-3">상품 입력</h4>
-        <form action="item.html" method="post">
+        <form action="item.html" th:action method="post">
             <div>
                 <label for="itemName">상품명</label>
                 <input type="text" id="itemName" name="itemName" class="form-control" placeholder="이름을 입력하세요">
@@ -765,7 +765,7 @@
         <div class="py-5 text-center">
             <h2>상품 수정 폼</h2>
         </div>
-        <form action="item.html" method="post">
+        <form action="item.html" th:action method="post">
             <div>
                 <label for="id">상품 ID</label>
                 <input type="text" id="id" name="id" class="form-control" value="1" th:value="${item.id}" readonly>

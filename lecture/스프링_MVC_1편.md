@@ -14,5 +14,7 @@
 
 6. [스프링 MVC - 기본 기능](https://github.com/kyh1126/TIL/blob/main/lecture/%EC%8A%A4%ED%94%84%EB%A7%81_MVC_1%ED%8E%B8/6_%EC%8A%A4%ED%94%84%EB%A7%81_MVC-%EA%B8%B0%EB%B3%B8_%EA%B8%B0%EB%8A%A5.md)
 
+7. [스프링 MVC - 웹 페이지 만들기](https://github.com/kyh1126/TIL/blob/main/lecture/%EC%8A%A4%ED%94%84%EB%A7%81_MVC_1%ED%8E%B8/7_%EC%8A%A4%ED%94%84%EB%A7%81_MVC-%EC%9B%B9_%ED%8E%98%EC%9D%B4%EC%A7%80_%EB%A7%8C%EB%93%A4%EA%B8%B0.md)
+
 
 - [Notion link](https://www.notion.so/MVC-1-5422e9f6df2a44b38dad055d4c9340fd)
