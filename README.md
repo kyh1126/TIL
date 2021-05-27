@@ -7,6 +7,8 @@ Today I Learned
 
 - [읽기 좋은 코드가 좋은 코드다](https://github.com/kyh1126/TIL/blob/main/book/%EC%9D%BD%EA%B8%B0_%EC%A2%8B%EC%9D%80_%EC%BD%94%EB%93%9C%EA%B0%80_%EC%A2%8B%EC%9D%80_%EC%BD%94%EB%93%9C%EB%8B%A4.md)
 
+- [테스트 주도 개발](https://github.com/kyh1126/TIL/blob/main/book/Test-Driven_Development.md)
+
 
 ## Lecture
 
