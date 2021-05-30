@@ -9,6 +9,8 @@ Today I Learned
 
 - [테스트 주도 개발](https://github.com/kyh1126/TIL/blob/main/book/Test-Driven_Development.md)
 
+- [성공하는 프로그래밍 공부법](https://github.com/kyh1126/TIL/blob/main/book/%EC%84%B1%EA%B3%B5%ED%95%98%EB%8A%94_%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D_%EA%B3%B5%EB%B6%80%EB%B2%95.md)
+
 
 ## Lecture
 
