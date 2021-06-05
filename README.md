@@ -13,6 +13,8 @@ Today I Learned
 
 - [죽을 때까지 코딩하며 사는 법](https://github.com/kyh1126/TIL/blob/main/book/%EC%A3%BD%EC%9D%84_%EB%95%8C%EA%B9%8C%EC%A7%80_%EC%BD%94%EB%94%A9%ED%95%98%EB%A9%B0_%EC%82%AC%EB%8A%94_%EB%B2%95.md)
 
+- [마스터링 이더리움](https://github.com/kyh1126/TIL/blob/main/book/%EB%A7%88%EC%8A%A4%ED%84%B0%EB%A7%81_%EC%9D%B4%EB%8D%94%EB%A6%AC%EC%9B%80.md)
+
 
 ## Lecture
 
