@@ -11,6 +11,8 @@ Today I Learned
 
 - [성공하는 프로그래밍 공부법](https://github.com/kyh1126/TIL/blob/main/book/%EC%84%B1%EA%B3%B5%ED%95%98%EB%8A%94_%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D_%EA%B3%B5%EB%B6%80%EB%B2%95.md)
 
+- [죽을 때까지 코딩하며 사는 법](https://github.com/kyh1126/TIL/blob/main/book/%EC%A3%BD%EC%9D%84_%EB%95%8C%EA%B9%8C%EC%A7%80_%EC%BD%94%EB%94%A9%ED%95%98%EB%A9%B0_%EC%82%AC%EB%8A%94_%EB%B2%95.md)
+
 
 ## Lecture
 
