@@ -1,6 +1,6 @@
 # data class serializable by default?
 
-- 디폴로 serializable interface 를 구현하고 있진 않다.
+- 디폴트로 `serializable` interface 를 구현하고 있진 않다.
 
 ```kotlin
 import java.io.Serializable
