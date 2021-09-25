@@ -44,7 +44,7 @@
 - 성능 극대화 + 처리량 비용 최소화 방안을 신속히 → [DynamoDB 를 사용한 설계 및 아키텍처 설계 모범 사례](https://docs.aws.amazon.com/ko_kr/amazondynamodb/latest/developerguide/best-practices.html)
 - DynamoDB 리소스에 태그 지정하는 방법 → [리소스에 태그 및 레이블 추가](https://docs.aws.amazon.com/ko_kr/amazondynamodb/latest/developerguide/Tagging.html)
 - 모범 사례, 방법 안내서 및 도구 → [Amazon DynamoDB 리소스](http://aws.amazon.com/dynamodb/resources/)
-- AWS DB Migration Service(AWS DMS)로 RDB 또는 MongoDB 에서 DynamoDB 테이블로 데이터 마이그레이션 → [AWS Database Migration Service 사용 설명서](https://docs.aws.amazon.com/dms/latest/userguide/)
+- AWS DB Migration Service(AWS DMS)로 RDB 또는 MongoDB 에서 DynamoDB 테이블로 데이터 마이그레이션 → [AWS Database Migration Service 사용 설명서](https://docs.aws.amazon.com/dms/latest/userguide/)
 - 마이그레이션 소스로 MongoDB 를 사용하는 방법 → [AWS DMS 에서](https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Target.DynamoDB.html) [MongoDB 를 원본으로 사용](https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Source.MongoDB.html)
 - 마이그레이션 대상으로 DynamoDB 를 사용하는 방법 → [AWS DMS 에서 Amazon DynamoDB 데이터베이스를 대상으로 사용](https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Target.DynamoDB.html)
 

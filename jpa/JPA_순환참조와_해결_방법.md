@@ -38,7 +38,7 @@
     - Repository 에서는 Account entity 한개를 return 했지만 Controller 를 통해 Response 되어 json 으로 표시될 때는 이렇게 두 개의 entity 가 계속해서 서로를 불러오면서 페이지 가득 똑같은 데이터가 중복되어 노출된 것이다.
 
 - JPA 의 양방향 참조로 인해서 RESTFul API 서버를 구현하는데 있어서 문제가 생기는데, 응답에 Entity 를 담아서 보낼 경우
-- JsonSerializer 가 toString() 호출 → property 들을 매핑하는 과정에서 무한 순환 참조가 일어나게 되는 문제이다.
+- JsonSerializer 가 toString() 호출 → property 들을 매핑하는 과정에서 무한 순환 참조가 일어나게 되는 문제이다.
 
 
 ## 해결 방법

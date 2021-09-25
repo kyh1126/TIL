@@ -41,9 +41,9 @@
         - 해시 버킷(bucket, 저장 공간)이 겹치면 다른 버킷에 데이터를 저장한다.
         - 이 때 다른 버킷과도 겹치면 버킷이 겹치지 않을 때까지 옆으로 계속 이동해야 하기 때문에 충돌이 많이 일어날 경우 심각한 성능 저하가 발생할 수 있다.
             - 데이터를 저장/조회할 해시 버킷을 찾을 때에는 Linear Probing, Quadratic Probing 등의 방법을 사용한다.
-            - 선형 탐색(Linear Probing): 비어있는 버킷을 찾을 때까지 순차적으로 탐색한다
-            - 제곱 탐색(Quadratic Probing): 제곱만큼 건너뛴 버킷에 데이터를 저장한다.
-            - 이중 해시(Double Hashing Probing): 해시 충돌 시 다른 해시 함수를 이용해 새로운 해시를 할당 받는다.
+            - 선형 탐색(Linear Probing): 비어있는 버킷을 찾을 때까지 순차적으로 탐색한다
+            - 제곱 탐색(Quadratic Probing): 제곱만큼 건너뛴 버킷에 데이터를 저장한다.
+            - 이중 해시(Double Hashing Probing): 해시 충돌 시 다른 해시 함수를 이용해 새로운 해시를 할당 받는다.
     - 분리 연결법(Seperate Chaining) → `HashMap`에서 사용하는 방식은 Separate Channing이다
         - 배열과 `LinkedList`를 조합하여 사용한다.
             - 각 배열의 인자는 인덱스가 같은 해시 버킷을 연결한 `LinkedList`의 첫 부분(head)이다.
@@ -363,7 +363,7 @@
     - 각 응용프로그램 내에서 만들어진 UUID는 유일무이하다고 가정하면 된다. (중복되는 UUID가 생성될 수도 있으나, 그 가능성은 대단히 희박하다)
 - UUID는 16byte(128bit) 숫자이다. (32개의 16진수로 표시가능)
     - 따라서 최대로 생성이 가능한 UUID 갯수는 2^128 = 256^16 또는 약 3.4 × 10^38 이다.
-    - 100억 년 동안, 매 1 nano second마다, 10^12 개의 UUID를 만들어 내면, 최대로 생성 가능한 UUID 갯수를 모두 만들어 낼 수 있다.
+    - 100억 년 동안, 매 1 nano second마다, 10^12 개의 UUID를 만들어 내면, 최대로 생성 가능한 UUID 갯수를 모두 만들어 낼 수 있다.
 - UUID의 표준적인(canonical) 표시 방법
     - 32개의 hexadigit과 4개의 하이픈(-)로 표시를 하는 것이다.
     - 4바이트-2바이트-2바이트-2바이트-6바이트 (ex> 550e8400-e29b-41d4-a716-446655440000)
@@ -371,9 +371,9 @@
     - version 1 (datetime + MAC address) : UUID를 생성시키는 컴퓨터의 MAC 어드레스와 시간 정보를 가지고 UUID를 만들어 낸다.
         - 단점은, 어느 컴퓨터가 언제 UUID를 생성시켰는지의 정보가 남기 때문에, 보안에 문제가 있다.
     - version 2 (datetime + mac + DCE 보안)
-    - version 3 (namespace + MD5 hash): URL로 부터 MD5를 이용해서 만들어 내는 방법이다.
-    - version 4 (Random): Random Number를 이용하는 방법이다.
-    - version 5 (namespace + SHA-1 hash): [SHA](http://en.wikipedia.org/wiki/SHA)-1 hashing을 이용하는 방법이다.
+    - version 3 (namespace + MD5 hash): URL로 부터 MD5를 이용해서 만들어 내는 방법이다.
+    - version 4 (Random): Random Number를 이용하는 방법이다.
+    - version 5 (namespace + SHA-1 hash): [SHA](http://en.wikipedia.org/wiki/SHA)-1 hashing을 이용하는 방법이다.
 
 - 참고
     - HashMap: [https://d2.naver.com/helloworld/831311](https://d2.naver.com/helloworld/831311)

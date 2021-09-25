@@ -1,8 +1,8 @@
-# abstract vs open classes
+# abstract vs open classes
 
 - java: 추상 클래스 구현을 만들어야 한다.
     - 상속을 불가능하게 만들기 위해서는 `final` 변경자를 붙여야 했다.
-- kotlin: `open class`를 사용하면 상속 가능한 클래스를 만들면서도 자체적으로 사용할 수 있다. 인터페이스와 일반 클래스의 멋진 혼합
+- kotlin: `open class`를 사용하면 상속 가능한 클래스를 만들면서도 자체적으로 사용할 수 있다. 인터페이스와 일반 클래스의 멋진 혼합
     - class 의 기본 상속 변경자: `final`
 
 → Kotlin의 상속 변경자 : `final`, `abstract`, `open`

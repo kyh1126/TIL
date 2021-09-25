@@ -4,15 +4,15 @@
 
 ~~내 생각에 기본 제공되는 Java 8 'Collectors' 클래스에서 빠진 것은 summarization 밖에 없는 것 같다 ([이 질문에 대한 또 다른 답변](https://stackoverflow.com/a/34661483/3679676) → 이 간단한 해결책입니다)~~
 
-~~One thing missing from both is batching by count, which is seen in [another Stack Overflow answer](https://stackoverflow.com/a/34504231/3679676) and has a simple answer as well. Another interesting case is this one also from Stack Overflow: [Idiomatic way to spilt sequence into three lists using Kotlin](https://stackoverflow.com/questions/32574783/idiomatic-way-to-spilt-sequence-into-three-lists-using-kotlin). And if you want to create something like `Stream.collect` for another purpose, see [Custom Stream.collect in Kotlin](https://stackoverflow.com/questions/34639208)~~
+~~One thing missing from both is batching by count, which is seen in [another Stack Overflow answer](https://stackoverflow.com/a/34504231/3679676) and has a simple answer as well. Another interesting case is this one also from Stack Overflow: [Idiomatic way to spilt sequence into three lists using Kotlin](https://stackoverflow.com/questions/32574783/idiomatic-way-to-spilt-sequence-into-three-lists-using-kotlin). And if you want to create something like `Stream.collect` for another purpose, see [Custom Stream.collect in Kotlin](https://stackoverflow.com/questions/34639208)~~
 
-**EDIT 11.08.2017:** Chunked/windowed collection operations were added in kotlin 1.2 M2, see [https://blog.jetbrains.com/kotlin/2017/08/kotlin-1-2-m2-is-out/](https://blog.jetbrains.com/kotlin/2017/08/kotlin-1-2-m2-is-out/)
+**EDIT 11.08.2017:** Chunked/windowed collection operations were added in kotlin 1.2 M2, see [https://blog.jetbrains.com/kotlin/2017/08/kotlin-1-2-m2-is-out/](https://blog.jetbrains.com/kotlin/2017/08/kotlin-1-2-m2-is-out/)
 
 ---
 
-It is always good to explore the [API Reference for kotlin.collections](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/index.html) as a whole before creating new functions that might already exist there.
+It is always good to explore the [API Reference for kotlin.collections](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/index.html) as a whole before creating new functions that might already exist there.
 
-Here are some conversions from Java 8 `Stream.collect` examples to the equivalent in Kotlin:
+Here are some conversions from Java 8 `Stream.collect` examples to the equivalent in Kotlin:
 
 ### Accumulate names into a List
 
@@ -194,12 +194,12 @@ val count = items.filter { it.startsWith('t') }.size
 val count = items.count { it.startsWith('t') }
 ```
 
-and on it goes... In all cases, no special fold, reduce, or other functionality was required to mimic `Stream.collect`. If you have further use cases, add them in comments and we can see!
+and on it goes... In all cases, no special fold, reduce, or other functionality was required to mimic `Stream.collect`. If you have further use cases, add them in comments and we can see!
 
 
 ## About laziness
 
-If you want to lazy process a chain, you can convert to a `Sequence` using `asSequence()` before the chain. At the end of the chain of functions, you usually end up with a `Sequence` as well. Then you can use `toList()`, `toSet()`, `toMap()` or some other function to materialize the `Sequence` at the end.
+If you want to lazy process a chain, you can convert to a `Sequence` using `asSequence()` before the chain. At the end of the chain of functions, you usually end up with a `Sequence` as well. Then you can use `toList()`, `toSet()`, `toMap()` or some other function to materialize the `Sequence` at the end.
 
 ```kotlin
 // switch to and from lazy
@@ -224,23 +224,23 @@ is the same as:
 val someList: List<String> = people.filter { it.age <= 30 }.map { it.name }
 ```
 
-Because Kotlin knows what `people` is, and that `people.age` is `Int` therefore the filter expression only allows comparison to an `Int`, and that `people.name` is a `String` therefore the `map` step produces a `List<String>` (readonly `List` of `String`).
+Because Kotlin knows what `people` is, and that `people.age` is `Int` therefore the filter expression only allows comparison to an `Int`, and that `people.name` is a `String` therefore the `map` step produces a `List<String>` (readonly `List` of `String`).
 
-Now, if `people` were possibly `null`, as-in a `List<People>?` then:
+Now, if `people` were possibly `null`, as-in a `List<People>?` then:
 
 ```kotlin
 val someList = people?.filter { it.age <= 30 }?.map { it.name }
 ```
 
-Returns a `List<String>?` that would need to be null checked (*or use one of the other Kotlin operators for nullable values, see this [Kotlin idiomatic way to deal with nullable values](https://stackoverflow.com/questions/34498562/in-kotlin-what-is-the-idiomatic-way-to-deal-with-nullable-values-referencing-o) and also [Idiomatic way of handling nullable or empty list in Kotlin](https://stackoverflow.com/questions/26341225/idiomatic-way-of-handling-nullable-or-empty-list-in-kotlin)*)
+Returns a `List<String>?` that would need to be null checked (*or use one of the other Kotlin operators for nullable values, see this [Kotlin idiomatic way to deal with nullable values](https://stackoverflow.com/questions/34498562/in-kotlin-what-is-the-idiomatic-way-to-deal-with-nullable-values-referencing-o) and also [Idiomatic way of handling nullable or empty list in Kotlin](https://stackoverflow.com/questions/26341225/idiomatic-way-of-handling-nullable-or-empty-list-in-kotlin)*)
 
 
 ## See also:
 
-- API Reference for [extension functions for Iterable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/kotlin.-iterable/index.html)
-- API reference for [extension functions for Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/kotlin.-array/index.html)
-- API reference for [extension functions for List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/kotlin.-list/index.html)
-- API reference for [extension functions to Map](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/kotlin.-map/index.html)
+- API Reference for [extension functions for Iterable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/kotlin.-iterable/index.html)
+- API reference for [extension functions for Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/kotlin.-array/index.html)
+- API reference for [extension functions for List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/kotlin.-list/index.html)
+- API reference for [extension functions to Map](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/kotlin.-map/index.html)
 
 - 참고
     - [https://stackoverflow.com/questions/34642254/what-java-8-stream-collect-equivalents-are-available-in-the-standard-kotlin-libr](https://stackoverflow.com/questions/34642254/what-java-8-stream-collect-equivalents-are-available-in-the-standard-kotlin-libr)

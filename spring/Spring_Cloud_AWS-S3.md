@@ -567,7 +567,7 @@
     implementation("org.springframework.cloud", "spring-cloud-starter-aws", "Hoxton.SR12")
     ```
 
-- [spring-cloud-aws-autoconfigure](https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-aws-autoconfigure/2.2.1.RELEASE)를 통해, 아래에서 작성할 application.yml으로 S3 Client를 자동으로 셋팅해주는 기능이 있는데, AmazonS3Client 가 deprecated가 됨에 따라 AmazonS3을 사용하게 되었다.
+- [spring-cloud-aws-autoconfigure](https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-aws-autoconfigure/2.2.1.RELEASE)를 통해, 아래에서 작성할 application.yml으로 S3 Client를 자동으로 셋팅해주는 기능이 있는데, AmazonS3Client 가 deprecated가 됨에 따라 AmazonS3을 사용하게 되었다.
 - 그래서 해당 의존성은 사용하지 않고, service 단에서 직접 설정해줘야 한다.
 - `application.yml`
 
@@ -585,13 +585,13 @@
           auto: false
     ```
 
-    - accessKey, secretKey: AWS 계정에 부여된 key 값 (IAM 계정 사용 권장)
+    - accessKey, secretKey: AWS 계정에 부여된 key 값 (IAM 계정 사용 권장)
     - s3.bucket: S3 서비스에서 생성한 버킷 이름
     - region.static: S3를 서비스할 region 명
-        - 서울은 ap-northeast-2를 작성하면 됩니다.
+        - 서울은 ap-northeast-2를 작성하면 됩니다.
     - stack.auto
-        - Spring Cloud 실행 시, 서버 구성을 자동화하는 CloudFormation이 자동으로 실행되는데 이를 사용하지 않겠다는 설정
-        - 해당 설정을 안해주면 아래의 에러가 발생합니다.
+        - Spring Cloud 실행 시, 서버 구성을 자동화하는 CloudFormation이 자동으로 실행되는데 이를 사용하지 않겠다는 설정
+        - 해당 설정을 안해주면 아래의 에러가 발생합니다.
 
             ```java
             org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.cloud.aws.core.env.ResourceIdResolver.BEAN_NAME': Invocation of init method failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'stackResourceRegistryFactoryBean' defined in class path resource [org/springframework/cloud/aws/autoconfigure/context/ContextStackAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.cloud.aws.core.env.stack.config.StackResourceRegistryFactoryBean]: Factory method 'stackResourceRegistryFactoryBean' threw exception; nested exception is java.lang.IllegalArgumentException: No valid instance id defined

@@ -10,11 +10,11 @@
 
 ## Repository
 
-- 저장 및 조회와 관련된 Repository 테스트는 JPA 의 도움이 필요하므로 `@DataJpaTest` 슬라이스 테스트를 활용한다.
-- `@DataJpaTest` 테스트는 저장을 위한 JPA 연관 관계가 적절히 구성되었는지, Repository 메서드가 제대로 구현되었는지 확인하는 것이 목적이다.
+- 저장 및 조회와 관련된 Repository 테스트는 JPA 의 도움이 필요하므로 `@DataJpaTest` 슬라이스 테스트를 활용한다.
+- `@DataJpaTest` 테스트는 저장을 위한 JPA 연관 관계가 적절히 구성되었는지, Repository 메서드가 제대로 구현되었는지 확인하는 것이 목적이다.
 - 먼저 JPA 관련 애노테이션 없이 코드를 작성해서 저장에 실패하는 테스트 코드를 먼저 작성하고,
 - JPA 규칙에 맞는 애노테이션을 추가해서 테스트 코드를 통과시킨다.
-- 테스트에 사용할 DB를 직접 지정하려면 다음 애노테이션을 추가해야 한다. 이유는 [여기](https://github.com/HomoEfficio/dev-tips/blob/master/Spring%20%40DataJpaTest%20%EC%82%AC%EC%9A%A9%20Tips.md#embedded-db-%EB%A7%90%EA%B3%A0-%EC%8B%A4%EC%A0%9C-db%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B3%A0-%EC%8B%B6%EC%9D%84-%EB%95%8C) 참고.
+- 테스트에 사용할 DB를 직접 지정하려면 다음 애노테이션을 추가해야 한다. 이유는 [여기](https://github.com/HomoEfficio/dev-tips/blob/master/Spring%20%40DataJpaTest%20%EC%82%AC%EC%9A%A9%20Tips.md#embedded-db-%EB%A7%90%EA%B3%A0-%EC%8B%A4%EC%A0%9C-db%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B3%A0-%EC%8B%B6%EC%9D%84-%EB%95%8C) 참고.
 
     ```java
     @AutoConfigureTestDatabase(replace = AutoConfigureTestDatabase.Replace.NONE)
