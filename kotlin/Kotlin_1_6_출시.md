@@ -1,6 +1,6 @@
 # Kotlin 1.6 출시
 
-- 쓰는 기술인 Kotlin/JVM 위주로만 정리함
+- 코틀린 component 중 쓰는 컴포넌트(Kotlin/JVM) 위주로만 정리
 - 레퍼런스: [https://blog.jetbrains.com/kotlin/2021/11/kotlin-1-6-0-is-released/#language-features](https://blog.jetbrains.com/kotlin/2021/11/kotlin-1-6-0-is-released/#language-features)
 - 예제: [https://kotlinlang.org/docs/whatsnew16.html#stable-suspending-functions-as-supertypes](https://kotlinlang.org/docs/whatsnew16.html#stable-suspending-functions-as-supertypes)
 
