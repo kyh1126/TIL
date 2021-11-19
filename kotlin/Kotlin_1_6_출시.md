@@ -353,7 +353,7 @@
 - 표준 입력, Stable typeOf(), Stable Duration API 및 기타 안정화된 stdlib 기능을 위한 새로운 기능이 있는 표준 라이브러리.
 - 표준 라이브러리의 새로운 1.6 버전은 실험 기능을 안정화하고 새로운 기능을 도입하며 플랫폼 전체에서 동작을 통합한다.
 
-### 4-1. **New readline functions**
+### 4-1. New readline functions
 
 ---
 
@@ -390,7 +390,7 @@
 - 기존 `readLine()` 함수는 IDE 코드 완성에서 `readln()` 및 `readlnOrNull()`보다 우선 순위가 낮다. IDE 검사에서는 레거시 `readLine()` 대신 새 함수를 사용할 것을 권장한다.
 - 향후 릴리스에서 `readLine()` 함수를 점진적으로 deprecate 할 계획이다.
 
-### 4-2. **Stable typeOf()**
+### 4-2. Stable typeOf()
 
 ---
 
@@ -413,7 +413,7 @@
     ```
     
 
-### 4-3. **Stable collection builders**
+### 4-3. Stable collection builders
 
 ---
 
@@ -431,7 +431,7 @@
     ```
     
 
-### 4-4. **Stable Duration API**
+### 4-4. Stable Duration API
 
 ---
 
@@ -457,7 +457,7 @@
         </aside>
         
 
-### 4-5. **Splitting Regex into a sequence**
+### 4-5. Splitting Regex into a sequence
 
 ---
 
@@ -475,7 +475,7 @@
     ```
     
 
-### 4-6. **Bit rotation operations on integers**
+### 4-6. Bit rotation operations on integers
 
 ---
 
@@ -492,7 +492,7 @@
     ```
     
 
-### 4-7. **Deprecations**
+### 4-7. Deprecations
 
 ---
 
