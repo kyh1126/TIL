@@ -15,6 +15,10 @@ Today I Learned
 
 - [마스터링 이더리움](https://github.com/kyh1126/TIL/blob/main/book/%EB%A7%88%EC%8A%A4%ED%84%B0%EB%A7%81_%EC%9D%B4%EB%8D%94%EB%A6%AC%EC%9B%80.md)
 
+- [함께 자라기](https://github.com/kyh1126/TIL/blob/main/book/%ED%95%A8%EA%BB%98_%EC%9E%90%EB%9D%BC%EA%B8%B0.md)
+
+- [2020, 사람들](https://github.com/kyh1126/TIL/blob/main/book/2020%2C%20%EC%82%AC%EB%9E%8C%EB%93%A4.md)
+
 
 ## Lecture
 
