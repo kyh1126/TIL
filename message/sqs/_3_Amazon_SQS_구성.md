@@ -34,7 +34,7 @@
             ![Untitled](./image/_3_/Untitled%201.png)
             
     7. (선택 사항) FIFO 큐의 경우, 큐에서 메시지를 보내고 받는 데 더 높은 처리량을 사용하려면 높은 처리량 FIFO 활성화 선택한다.
-        - 이 옵션을 선택하면 관련 옵션(중복 제거 범위 및 FIFO 처리량 한도)을 필요한 설정으로 설정한다. 자세한 내용은 [FIFO 대기열에 대한 높은 처리량](https://docs.aws.amazon.com/ko_kr/AWSSimpleQueueService/latest/SQSDeveloperGuide/high-throughput-fifo.html) 및 [메시지 관련 할당량](https://docs.aws.amazon.com/ko_kr/AWSSimpleQueueService/latest/SQSDeveloperGuide/quotas-messages.html) 단원을 참조해라.
+        - 이 옵션을 선택하면 관련 옵션(중복 제거 범위 및 FIFO 처리량 한도)을 필요한 설정으로 설정한다. 자세한 내용은 [FIFO 대기열에 대한 높은 처리량](https://docs.aws.amazon.com/ko_kr/AWSSimpleQueueService/latest/SQSDeveloperGuide/high-throughput-fifo.html) 및 [메시지 관련 할당량](https://docs.aws.amazon.com/ko_kr/AWSSimpleQueueService/latest/SQSDeveloperGuide/quotas-messages.html) 단원을 참조해라.
             
             ![Untitled](./image/_3_/Untitled%202.png)
             

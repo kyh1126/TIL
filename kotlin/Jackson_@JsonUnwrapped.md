@@ -62,7 +62,7 @@ data class InvoiceDetailCreateModel(
     - [https://velog.io/@freddiey/Spring-validationwith-kotlin](https://velog.io/@freddiey/Spring-validationwith-kotlin)
     - [https://blog.gangnamunni.com/post/kotlin-annotation/](https://blog.gangnamunni.com/post/kotlin-annotation/)
 
-- cf> 코틀린은 [Annotation use-site target](https://kotlinlang.org/docs/reference/annotations.html#annotation-use-site-targets)을 지정하지 않은 경우 다음 순서로 `@Annotation`의 `@Target`의 가능여부를 조사하여 가능한 첫번째 `@Target`을 선택한다.
+- cf> 코틀린은 [Annotation use-site target](https://kotlinlang.org/docs/reference/annotations.html#annotation-use-site-targets)을 지정하지 않은 경우 다음 순서로 `@Annotation`의 `@Target`의 가능여부를 조사하여 가능한 첫번째 `@Target`을 선택한다.
     1. param - (a constructor parameter)
     2. property - (the Kotlin's property, it is not accessible from Java code)
     3. field - (field)

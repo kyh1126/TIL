@@ -23,8 +23,8 @@
 
     ![Untitled](./image/_2_/Untitled.png)
 
-4. 큐의 메시지 그룹 ID 를 입력한다. 자세한 내용은 [FIFO 전송 로직](https://docs.aws.amazon.com/ko_kr/AWSSimpleQueueService/latest/SQSDeveloperGuide/FIFO-queues-understanding-logic.html) 단원 참조
-5. 메시지 중복 제거 ID(선택 사항) 를 입력한다. content-based 중복 제거가 설정되어 있으면 메시지 중복 제거 ID가 필요하지 않다. 자세한 내용은 [FIFO 전송 로직](https://docs.aws.amazon.com/ko_kr/AWSSimpleQueueService/latest/SQSDeveloperGuide/FIFO-queues-understanding-logic.html) 단원 참조
+4. 큐의 메시지 그룹 ID 를 입력한다. 자세한 내용은 [FIFO 전송 로직](https://docs.aws.amazon.com/ko_kr/AWSSimpleQueueService/latest/SQSDeveloperGuide/FIFO-queues-understanding-logic.html) 단원 참조
+5. 메시지 중복 제거 ID(선택 사항) 를 입력한다. content-based 중복 제거가 설정되어 있으면 메시지 중복 제거 ID가 필요하지 않다. 자세한 내용은 [FIFO 전송 로직](https://docs.aws.amazon.com/ko_kr/AWSSimpleQueueService/latest/SQSDeveloperGuide/FIFO-queues-understanding-logic.html) 단원 참조
 6. 메시지 전송을 선택하면 메시지가 전송되고 콘솔이 성공 메시지를 표시한다. 세부 정보 보기 선택시 전송된 메시지에 대한 정보를 표시한다.
     
     ![Untitled](./image/_2_/Untitled%201.png)

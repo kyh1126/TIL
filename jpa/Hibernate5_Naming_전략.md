@@ -31,8 +31,8 @@
     ```
     
 - 종류
-    - `SpringPhysicalNamingStrategy`(default): camel case를 underscore 형태로 변경
-    - `PhysicalNamingStrategyStandardImpl`: 변수 이름을 그대로 사용
+    - `SpringPhysicalNamingStrategy`(default): camel case를 underscore 형태로 변경
+    - `PhysicalNamingStrategyStandardImpl`: 변수 이름을 그대로 사용
 
 - 참고
     - [https://prolog.techcourse.co.kr/posts/1182](https://prolog.techcourse.co.kr/posts/1182)

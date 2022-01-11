@@ -50,9 +50,9 @@
 ## 4. Amazon SQS 시작과 관련된 일반적인 작업
 
 - 첫 번째 큐를 생성하고 메시지를 전송, 수신, 삭제하려면: [Amazon SQS 시작하기](https://docs.aws.amazon.com/ko_kr/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-getting-started.html)
-- Lambda 함수를 트리거하려면: [대기열을 구성하여AWS Lambda함수 (콘솔)](https://docs.aws.amazon.com/ko_kr/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-configure-lambda-function-trigger.html)
+- Lambda 함수를 트리거하려면: [대기열을 구성하여AWS Lambda함수 (콘솔)](https://docs.aws.amazon.com/ko_kr/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-configure-lambda-function-trigger.html)
 - SQS 기능 및 아키텍처에 대해 알아보려면: [Amazon SQS 작동](https://docs.aws.amazon.com/ko_kr/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-how-it-works.html)
 - Amazon SQS 를 최대한 활용하는 데 도움이 될 지침 및 주의 사항에 대해 알아보려면: [Amazon SQS 모범 사례](https://docs.aws.amazon.com/ko_kr/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-best-practices.html)
 - AWS SDK 예제: [AWS SDK for Java 2.x개발자 안내서](https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/)
 - Amazon SQS 작업에 대해 알아보려면: [Amazon Simple Queue Service API](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/)
-- AWS CLI 명령에 대한 자세한 내용은: [AWS CLI명령 참조](https://docs.aws.amazon.com/cli/latest/reference/sqs/index.html)
+- AWS CLI 명령에 대한 자세한 내용은: [AWS CLI명령 참조](https://docs.aws.amazon.com/cli/latest/reference/sqs/index.html)

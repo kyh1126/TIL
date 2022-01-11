@@ -6,7 +6,7 @@
 
 ## 1. Language 기능들
 
-### 1-1. Sealed (exhaustive) `when` statements
+### 1-1. Sealed (exhaustive) `when` statements
 
 ---
 
@@ -82,7 +82,7 @@
         fun invokeOnCompletion(handler: () -> Unit)
         ```
         
-        → 이는 *`invokeOnCompletion*{ *doSomething*() }`  같이 편하게 쓸 수 있다.
+        → 이는 *`invokeOnCompletion*{ *doSomething*() }`  같이 편하게 쓸 수 있다.
         
     - 예제에서 Completion 처리하려는 클래스가 있는 경우, 추가 람다를 생성하지 않고 클래스에서 함수형 타입 `() -> Unit`을 직접 구현(`implement`)하여 코드를 간소화하고 최적화할 수 있다.
         
@@ -245,7 +245,7 @@
 ## 2. Kotlin/JVM
 
 - 우리가 IntelliJ 에서 디폴트로 쓰는 Kotlin component (JVM 11)
-    - 셋팅은 👉  Language version 1.6으로 변경
+    - 셋팅은 👉  Language version 1.6으로 변경
         
         ![Untitled](./image/kotlin_1_6_released/Untitled%204.png)
         
@@ -269,7 +269,7 @@
     java.sourceCompatibility = **JavaVersion.VERSION_11**
     ```
     
-     👉   개인 IntelliJ 에서도 JVM 11 을 사용하도록 하자! (Target JVM version)
+     👉   개인 IntelliJ 에서도 JVM 11 을 사용하도록 하자! (Target JVM version)
     
     ![Untitled](./image/kotlin_1_6_released/Untitled%205.png)
     
@@ -418,7 +418,7 @@
 ---
 
 - Kotlin 1.6에서는 컬렉션 빌더 기능이 Stable 로 승격되었다. 컬렉션 빌더가 반환한 컬렉션은 이제 읽기 전용 상태에서 serializable 이다.
-- 이제 opt-in 어노테이션 없이 `[buildMap()](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/build-map.html)`, `[buildList()](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/build-list.html)`, `[buildSet()](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/build-set.html)` 을 사용할 수 있다.
+- 이제 opt-in 어노테이션 없이 `[buildMap()](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/build-map.html)`, `[buildList()](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/build-list.html)`, `[buildSet()](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/build-set.html)` 을 사용할 수 있다.
     
     ```kotlin
     val x = listOf('b', 'c')
