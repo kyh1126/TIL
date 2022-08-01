@@ -5,7 +5,7 @@ Today I Learned
 
 - [소프트웨어 장인](https://github.com/kyh1126/TIL/blob/main/book/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4_%EC%9E%A5%EC%9D%B8.md)
 
-- [읽기 좋은 코드가 좋은 코드다](https://github.com/kyh1126/TIL/blob/main/book/%EC%9D%BD%EA%B8%B0_%EC%A2%8B%EC%9D%80_%EC%BD%94%EB%93%9C%EA%B0%80_%EC%A2%8B%EC%9D%80_%EC%BD%94%EB%93%9C%EB%8B%A4.md)
+- [읽기 좋은 코드가 좋은 코드다](https://github.com/kyh1126/TIL/blob/main/book/%EC%9D%BD%EA%B8%B0_%EC%A2%8B%EC%9D%80_%EC%BD%94%EB%93%9C%EA%B0%80_%EC%A2%8B%EC%9D%80_%EC%BD%94%EB%93%9C%EB%8B%A4/index.md)
 
 - [테스트 주도 개발](https://github.com/kyh1126/TIL/blob/main/book/Test-Driven_Development.md)
 
@@ -18,6 +18,8 @@ Today I Learned
 - [함께 자라기](https://github.com/kyh1126/TIL/blob/main/book/%ED%95%A8%EA%BB%98_%EC%9E%90%EB%9D%BC%EA%B8%B0.md)
 
 - [2020, 사람들](https://github.com/kyh1126/TIL/blob/main/book/2020%2C%20%EC%82%AC%EB%9E%8C%EB%93%A4.md)
+
+- [CODE_하드웨어와 소프트웨어에 숨어 있는 언어](https://github.com/kyh1126/TIL/tree/main/book/CODE_%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4%EC%99%80_%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%EC%97%90_%EC%88%A8%EC%96%B4_%EC%9E%88%EB%8A%94_%EC%96%B8%EC%96%B4)
 
 
 ## Lecture
