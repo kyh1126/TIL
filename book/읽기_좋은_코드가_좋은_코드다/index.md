@@ -17,7 +17,7 @@
         - stop() 대신 kill(), pause()
     - 더 화려한 단어 고르기
 
-        ![Untitled.png](image/theartofreadablecode/Untitled.png)
+        ![Untitled.png](theartofreadablecode/Untitled.png)
 
     - 재치 있는 이름보다 명확하고 간결한 이름이 더 좋다.
 
@@ -34,11 +34,11 @@
 - 접두사 혹은 접미사로 이름에 추가적인 정보 덧붙이기
     - 단위를 포함하는 값들: start 대신 start_ms
 
-        ![Untitled1.png](image/theartofreadablecode/Untitled%201.png)
+        ![Untitled1.png](theartofreadablecode/Untitled%201.png)
 
     - 다른 중요한 속성 포함하기: 위험한 요소 혹은 나중에 놀랄만한 내용이 있다면 변수명에 이를 포함해야 한다. 이스케이핑을 수행하는 변수 앞에 raw_ 를 붙인다.
 
-        ![Untitled2.png](image/theartofreadablecode/Untitled%202.png)
+        ![Untitled2.png](theartofreadablecode/Untitled%202.png)
 
 - 이름이 얼마나 길어져도 좋은지 결정하기
     - 좁은 범위에서는 짧은 이름이 괜찮다.
@@ -62,11 +62,11 @@
 - 경계를 포함하는 한계값을 다룰 때는 min 과 max 를 사용하라: MIN_ITEMS_IN_CART
 - 경계를 포함하는 범위에는 first, last 를 사용하라
 
-    ![Untitled3.png](image/theartofreadablecode/Untitled%203.png)
+    ![Untitled3.png](theartofreadablecode/Untitled%203.png)
 
 - 경계를 포함하고/배제하는 범위에는 begin, end 를 사용하라
 
-    ![Untitled4.png](image/theartofreadablecode/Untitled%204.png)
+    ![Untitled4.png](theartofreadablecode/Untitled%204.png)
 
 - 불리언 변수에 이름 붙이기: true, false 가 각각 무엇을 의미하는지 명확해야 한다.
     - 일반적으로 is, has, can, should 같은 단어를 더하면 의미가 더 명확해진다.
@@ -81,7 +81,7 @@
     - 코드를 읽는 사람이 이미 친숙한, 일관성 있는 레이아웃을 사용하라.
         - 의미있는 순서를 선택하고 일관성 있게 사용하라: 코드의 순서가 코드의 정확성에 아무런 영향을 미치지 않는 경우, 한 곳에서 언급된 순서를 지키자.
 
-            ![Untitled5.png](image/theartofreadablecode/Untitled%205.png)
+            ![Untitled5.png](theartofreadablecode/Untitled%205.png)
 
             - 변수의 순서를 HTML 폼에 있는 `<input>` 필드의 순서대로 나열하라.
             - '가장 중요한 것'에서 시작해서 '가장 덜 중요한 것'까지 순서대로 나열하라.
@@ -90,11 +90,11 @@
     - 비슷한 코드는 서로 비슷해 보이게 만들어라.
         - 일관성과 간결성을 위해서 줄 바꿈을 재정렬하기
 
-            ![Untitled6.png](image/theartofreadablecode/Untitled%206.png)
+            ![Untitled6.png](theartofreadablecode/Untitled%206.png)
 
             - 주석 반복 제거하고자 좀 더 간결하게 개선해 볼 수 있다.
 
-                ![Untitled7.png](image/theartofreadablecode/Untitled%207.png)
+                ![Untitled7.png](theartofreadablecode/Untitled%207.png)
 
         - 메소드를 활용하여 불규칙성을 정리하라. 헬퍼 메소드 적용 효과.
             - 중복된 코드를 없애서 코드를 더 간결하게 한다.
@@ -102,26 +102,26 @@
             - 새로운 테스트 추가가 훨씬 쉬워졌다.
         - 도움이 된다면 코드의 열을 맞춰라
 
-            ![Untitled8.png](image/theartofreadablecode/Untitled%208.png)
+            ![Untitled8.png](theartofreadablecode/Untitled%208.png)
 
-            ![Untitled9.png](image/theartofreadablecode/Untitled%209.png)
+            ![Untitled9.png](theartofreadablecode/Untitled%209.png)
 
-            ![Untitled10.png](image/theartofreadablecode/Untitled%2010.png)
+            ![Untitled10.png](theartofreadablecode/Untitled%2010.png)
 
     - 서로 연관된 코드는 하나의 블록으로 묶어라.
         - 선언문을 블록으로 구성하라
             - before
 
-                ![Untitled11.png](image/theartofreadablecode/Untitled%2011.png)
+                ![Untitled11.png](theartofreadablecode/Untitled%2011.png)
 
-            ![Untitled12.png](image/theartofreadablecode/Untitled%2012.png)
+            ![Untitled12.png](theartofreadablecode/Untitled%2012.png)
 
         - 코드를 '문단'으로 쪼개라
             - before
 
-                ![Untitled13.png](image/theartofreadablecode/Untitled%2013.png)
+                ![Untitled13.png](theartofreadablecode/Untitled%2013.png)
 
-            ![Untitled14.png](image/theartofreadablecode/Untitled%2014.png)
+            ![Untitled14.png](theartofreadablecode/Untitled%2014.png)
 
             - 각 문단의 주석 처리는 사용자가 코드를 훑어보는 데 도움을 준다.
 
@@ -134,17 +134,17 @@
         - 설명 자체를 위한 설명을 달지 말라.
         - before
 
-            ![Untitled15.png](image/theartofreadablecode/Untitled%2015.png)
+            ![Untitled15.png](theartofreadablecode/Untitled%2015.png)
 
-        ![Untitled16.png](image/theartofreadablecode/Untitled%2016.png)
+        ![Untitled16.png](theartofreadablecode/Untitled%2016.png)
 
         - 함수의 선언과 주석 내용이 실질적으로 일치하는 경우, 주석을 삭제하거나 더 중요한 세부 사항을 적는 것이 낫다.
     - 나쁜 이름에 주석을 달지 마라 - 대신 이름을 고쳐라.
         - before
 
-            ![Untitled17.png](image/theartofreadablecode/Untitled%2017.png)
+            ![Untitled17.png](theartofreadablecode/Untitled%2017.png)
 
-        ![Untitled18.png](image/theartofreadablecode/Untitled%2018.png)
+        ![Untitled18.png](theartofreadablecode/Untitled%2018.png)
 
         - 좋은 이름은 함수가 사용되는 모든 곳에서 드러나므로 좋은 주석보다 더 낫다.
 - 코딩을 수행하면서 머릿속에 있는 정보를 기록하기.
@@ -152,15 +152,15 @@
         - 중요한 통찰을 기록한 주석을 코드에 포함시켜야 한다.
         - 코드를 최적화 하느라 시간을 허비하지 않게 도와준다.
 
-            ![Untitled19.png](image/theartofreadablecode/Untitled%2019.png)
+            ![Untitled19.png](theartofreadablecode/Untitled%2019.png)
 
         - 오해의 소지로 인한 시간 허비 방지
 
-            ![Untitled20.png](image/theartofreadablecode/Untitled%2020.png)
+            ![Untitled20.png](theartofreadablecode/Untitled%2020.png)
 
         - 코드가 왜 훌륭하지 않은지도 설명할 수 있다.
 
-            ![Untitled21.png](image/theartofreadablecode/Untitled%2021.png)
+            ![Untitled21.png](theartofreadablecode/Untitled%2021.png)
 
             - 다음 사람에게 어떻게 수정해야 하는지 알려준다. 만약 이 주석이 없으면 많은 사람이 이 코드에 겁을 먹어 건드리지 않으려고 할 것이다.
     - 코드에 있는 결함을 설명하라
@@ -168,55 +168,55 @@
         - 개선 아이디어 설명하기
             - 다음과 같이 개선이 필요할 때
 
-                ![Untitled22.png](image/theartofreadablecode/Untitled%2022.png)
+                ![Untitled22.png](theartofreadablecode/Untitled%2022.png)
               
             - 코드가 불완전할 때
 
-                ![Untitled23.png](image/theartofreadablecode/Untitled%2023.png)
+                ![Untitled23.png](theartofreadablecode/Untitled%2023.png)
 
-        ![Untitled24.png](image/theartofreadablecode/Untitled%2024.png)
+        ![Untitled24.png](theartofreadablecode/Untitled%2024.png)
 
     - 상수에 대한 설명
         - 상수에 별도의 설명이 필요한 경우
 
-            ![Untitled25.png](image/theartofreadablecode/Untitled%2025.png)
+            ![Untitled25.png](theartofreadablecode/Untitled%2025.png)
 
         - 상수의 특정한 값이 아무런 의미를 갖지 않음을 알려주는 주석
 
-            ![Untitled26.png](image/theartofreadablecode/Untitled%2026.png)
+            ![Untitled26.png](theartofreadablecode/Untitled%2026.png)
 
         - 신중하게 설정되었으니 변경하지 마라 표시
 
-            ![Untitled27.png](image/theartofreadablecode/Untitled%2027.png)
+            ![Untitled27.png](theartofreadablecode/Untitled%2027.png)
 
 - 코드를 읽는 사람 입장에서 필요한 정보가 무엇인지 유추하기.
     - 나올 것 같은 질문 예측하기
 
-        ![Untitled28.png](image/theartofreadablecode/Untitled%2028.png)
+        ![Untitled28.png](theartofreadablecode/Untitled%2028.png)
 
     - 사람들이 쉽게 빠질 것 같은 함정을 경고하라
         - 함수의 '세부 사항'을 설명하는 주석
 
-            ![Untitled29.png](image/theartofreadablecode/Untitled%2029.png)
+            ![Untitled29.png](theartofreadablecode/Untitled%2029.png)
 
         - 함수의 단점을 주석으로 미리 알려주자
 
-            ![Untitled30.png](image/theartofreadablecode/Untitled%2030.png)
+            ![Untitled30.png](theartofreadablecode/Untitled%2030.png)
 
     - '큰 그림'에 대한 주석
         - 상위 레벨 주석
 
-            ![Untitled31.png](image/theartofreadablecode/Untitled%2031.png)
+            ![Untitled31.png](theartofreadablecode/Untitled%2031.png)
 
         - 파일 레벨 주석
 
-            ![Untitled32.png](image/theartofreadablecode/Untitled%2032.png)
+            ![Untitled32.png](theartofreadablecode/Untitled%2032.png)
 
     - 요약 주석
         - 함수 내부에서 '큰 그림'을 설명하는 방식.
         - 더 아래의, 하위 레벨 주석: 코드의 내용을 간결하게 요약한다.
 
-            ![Untitled33.png](image/theartofreadablecode/Untitled%2033.png)
+            ![Untitled33.png](theartofreadablecode/Untitled%2033.png)
 
 
 ## 6. 명확하고 간결한 주석 달기
@@ -236,28 +236,28 @@
         - 지나치게 간단한 입출력 예는 별로 유용하지 않다.
         - before
 
-            ![Untitled34.png](image/theartofreadablecode/Untitled%2034.png)
+            ![Untitled34.png](theartofreadablecode/Untitled%2034.png)
 
-        ![Untitled35.png](image/theartofreadablecode/Untitled%2035.png)
+        ![Untitled35.png](theartofreadablecode/Untitled%2035.png)
 
     - 코드의 의도를 명시하라
         - before
 
-            ![Untitled36.png](image/theartofreadablecode/Untitled%2036.png)
+            ![Untitled36.png](theartofreadablecode/Untitled%2036.png)
 
-        ![Untitled37.png](image/theartofreadablecode/Untitled%2037.png)
+        ![Untitled37.png](theartofreadablecode/Untitled%2037.png)
 
     - 이름을 가진 함수 파라미터(Named Function Parameter) 주석
         - 의미가 불분명한 함수의 인수를 설명하라.
 
-        ![Untitled38.png](image/theartofreadablecode/Untitled%2038.png)
+        ![Untitled38.png](theartofreadablecode/Untitled%2038.png)
 
     - 정보 축약형 단어를 사용하라
         - before
 
-            ![Untitled39.png](image/theartofreadablecode/Untitled%2039.png)
+            ![Untitled39.png](theartofreadablecode/Untitled%2039.png)
 
-        ![Untitled40.png](image/theartofreadablecode/Untitled%2040.png)
+        ![Untitled40.png](theartofreadablecode/Untitled%2040.png)
 
 
 # Part 2. 루프와 논리를 단순화하기
@@ -280,13 +280,13 @@
     - 더 흥미롭고, 확실한 것을 먼저 다루어라.
         - before
 
-          ![Untitled41.png](image/theartofreadablecode/Untitled%2041.png)
+          ![Untitled41.png](theartofreadablecode/Untitled%2041.png)
 
-      ![Untitled42.png](image/theartofreadablecode/Untitled%2042.png)
+      ![Untitled42.png](theartofreadablecode/Untitled%2042.png)
 
     - 그러나, 부정부터 다루어야 더 단순하고 흥미로우면서 동시에 위험해지는 경우도 있다.
 
-      ![Untitled43.png](image/theartofreadablecode/Untitled%2043.png)
+      ![Untitled43.png](theartofreadablecode/Untitled%2043.png)
 
         - 이 경우에는 상세 내용을 따지고 난 뒤 판단을 내려야 한다.
 - 삼항 연산자(`?:`)를 이용하는 조건문 표현
@@ -318,13 +318,13 @@
 - 함수 중간에서 반환하기
     - 함수 중간에서 반환하는 것이 바람직할 때도 있어, 완전히 허용되어야 한다.
 
-      ![Untitled44.png](image/theartofreadablecode/Untitled%2044.png)
+      ![Untitled44.png](theartofreadablecode/Untitled%2044.png)
 
         - 위의 함수를 중간에서 반환하는 보호장치 없이 구현하면 매우 부자연스러워질 것이다.
     - 반환 포인트를 하나만 두려는 건 함수의 끝부분에서 실행되는 클린업(cleanup) 코드의 호출을 보장하려는 의도다.
         - 언어 차원에서 제공하는 더 정교한 클린업 코드를 실행시키는 방법을 사용하자.
 
-      ![Untitled45.png](image/theartofreadablecode/Untitled%2045.png)
+      ![Untitled45.png](theartofreadablecode/Untitled%2045.png)
 
 - 악명 높은 `goto`는 피하는 게 낫다.
 - 중첩을 최소화하기
@@ -332,23 +332,23 @@
     - 함수 중간에서 반환하여 중첩을 제거하라
         - before
 
-          ![Untitled46.png](image/theartofreadablecode/Untitled%2046.png)
+          ![Untitled46.png](theartofreadablecode/Untitled%2046.png)
 
-      ![Untitled47.png](image/theartofreadablecode/Untitled%2047.png)
+      ![Untitled47.png](theartofreadablecode/Untitled%2047.png)
 
     - 루프 내부에 있는 중첩 제거하기 - 루프 중간에서 반환하기
         - before
 
-          ![Untitled48.png](image/theartofreadablecode/Untitled%2048.png)
+          ![Untitled48.png](theartofreadablecode/Untitled%2048.png)
 
-      ![Untitled49.png](image/theartofreadablecode/Untitled%2049.png)
+      ![Untitled49.png](theartofreadablecode/Untitled%2049.png)
 
         - `if/return`을 함수의 보호 장치로 사용했듯이, `if/continue`도 루프의 보호 장치로 사용할 수 있다.
 
 - 실행 흐름을 따라올 수 있는가?
     - 눈에 보이는 코드의 '뒤에서' 실행되는 몇 가지
 
-      ![Untitled50.png](image/theartofreadablecode/Untitled%2050.png)
+      ![Untitled50.png](theartofreadablecode/Untitled%2050.png)
 
   → 이러한 구조가 차지하는 비율이 너무 높지 않아야 한다.
 
@@ -889,11 +889,11 @@
 - 테스트에 친숙한 개발
     - 테스트하기 어려운 코드의 특징과 이것이 설계와 관련된 문제에 미치는 영향
 
-      ![Untitled51.png](image/theartofreadablecode/Untitled%2051.png)
+      ![Untitled51.png](theartofreadablecode/Untitled%2051.png)
 
     - 테스트와 설계가 가지는 좋은 특징
 
-      ![Untitled52.png](image/theartofreadablecode/Untitled%2052.png)
+      ![Untitled52.png](theartofreadablecode/Untitled%2052.png)
 
 - 지나친 테스트
     - 테스트를 가능하게 하려고 실제 코드의 가독성을 희생시킨다.
@@ -1350,7 +1350,7 @@
 
 - 초당 100번의 Add()호출 시, 성능 통계수치
 
-  ![Untitled53.png](image/theartofreadablecode/Untitled%2053.png)
+  ![Untitled53.png](theartofreadablecode/Untitled%2053.png)
 
 - 사용자는 클래스1(MinuteHourCounter) 만 알면 충분하다.
     - ConveyorQueue: 시스템이 허락하는 한도 내에서 무제한의 크기를 갖는 큐로서 옆으로 한 칸 움직일 수 있으며, 큐 안에 담긴 모든 항목의 총합을 관리한다.

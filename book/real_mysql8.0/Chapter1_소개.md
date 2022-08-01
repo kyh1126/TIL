@@ -22,7 +22,7 @@
 
 - 2022년 1월 DBMS 랭킹 ([https://db-engines.com/en/ranking](https://db-engines.com/en/ranking))
     
-    ![Untitled](../image/realmysql/1/Untitled.png)
+    ![Untitled](realmysql/1/Untitled.png)
     
     - 점수 부여 기준
         - 웹 사이트 언급 횟수

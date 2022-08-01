@@ -223,7 +223,7 @@
     ```
     
 
-![Untitled](../image/kotlininaction/1/Untitled.png)
+![Untitled](image/1/Untitled.png)
 
 ### 5-2. 인텔리J 아이디어와 안드로이드 스튜디오의 코틀린 플러그인
 

@@ -54,11 +54,11 @@
     - MySQL 서버가 설치된 디렉터리는 `/usr/local/Cellar/mysql/8.0.25_1`
         - basedir
             
-            ![Untitled](../image/realmysql/2/Untitled.png)
+            ![Untitled](realmysql/2/Untitled.png)
             
         - datadir
             
-            ![Untitled](../image/realmysql/2/Untitled%201.png)
+            ![Untitled](realmysql/2/Untitled%201.png)
             
         - bin: MySQL 서버와 클라이언트 프로그램. 유틸리티를 위한 디렉터리
         - data: 로그 파일과 데이터 파일들이 저장되는 디렉터리
@@ -482,7 +482,7 @@
     
 - 시스템 변수를 설명한 [페이지](https://dev.mysql.com/doc/refman/8.0/en/server-system-variable-reference.html)
     
-    ![Untitled](../image/realmysql/2/Untitled%202.png)
+    ![Untitled](realmysql/2/Untitled%202.png)
     
     - Cmd-Line: MySQL 서버의 명령행 인자로 설정될 수 있는지 여부
     - Option File: MySQL 의 설정 파일인 `my.cnf` 로 제어할 수 있는지 여부
