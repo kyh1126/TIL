@@ -21,6 +21,8 @@ Today I Learned
 
 - [CODE_하드웨어와 소프트웨어에 숨어 있는 언어](https://github.com/kyh1126/TIL/tree/main/book/CODE_%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4%EC%99%80_%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%EC%97%90_%EC%88%A8%EC%96%B4_%EC%9E%88%EB%8A%94_%EC%96%B8%EC%96%B4)
 
+- [실전 카프카 개발부터 운영까지](https://github.com/kyh1126/TIL/tree/main/book/%EC%8B%A4%EC%A0%84_%EC%B9%B4%ED%94%84%EC%B9%B4_%EA%B0%9C%EB%B0%9C%EB%B6%80%ED%84%B0_%EC%9A%B4%EC%98%81%EA%B9%8C%EC%A7%80)
+
 
 ## Lecture
 
