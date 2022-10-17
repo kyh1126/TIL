@@ -551,6 +551,379 @@
 
 ---
 
+- `mongosh`
+    
+    ```bash
+    # 다음과 같다.
+    mongosh "mongodb://localhost:27017"
+    ```
+    
+
+- 다른 장비나 포트에 `mongosh`를 연결하려면 셸을 시작할 때 호스트명, 포트를 명시해야 한다.
+    
+    ```bash
+    # localhost에 디폴트 포트가 아닌거로 접근할 때
+    mongosh --port 30000
+    
+    # 원격 호스트의 몽고DB 인스턴스에 접근할 때
+    mongosh "mongodb://mongodb0.example.com:28015"
+    
+    # 특정 Database에 연결할 때, 특정하지 않을 경우 test Database로 연결
+    mongosh "mongodb://localhost:27017/db1"
+    ```
+    
+
+- 시작한 후 원하는 대에 `new Mongo(호스트명)`를 실행함으로써 `mongod`에 연결한다.
+    
+    ```bash
+    test> conn = new Mongo("localhost:27017")
+    mongodb://localhost:27017/?directConnection=true&serverSelectionTimeoutMS=2000
+    
+    test> db = conn.getDB("myDB")
+    myDB
+    ```
+    
+
+### 7-1. 셸 활용 팁
+
+---
+
+- `help`를 입력하면 셸에 내장된 도움말을 볼 수 있다.
+    
+    ```bash
+    myDB> help
+    
+      Shell Help:
+    
+        use                                        Set current database
+        show                                       'show databases'/'show dbs': Print a list of all available databases.
+                                                   'show collections'/'show tables': Print a list of all collections for current database.
+                                                   'show profile': Prints system.profile information.
+                                                   'show users': Print a list of all users for current database.
+                                                   'show roles': Print a list of all roles for current database.
+                                                   'show log <type>': log for current connection, if type is not set uses 'global'
+                                                   'show logs': Print all logs.
+    
+        exit                                       Quit the MongoDB shell with exit/exit()/.exit
+        quit                                       Quit the MongoDB shell with quit/quit()
+        Mongo                                      Create a new connection and return the Mongo object. Usage: new Mongo(URI, options [optional])
+        connect                                    Create a new connection and return the Database object. Usage: connect(URI, username [optional], password [optional])
+        it                                         result of the last line evaluated; use to further iterate
+        version                                    Shell version
+        load                                       Loads and runs a JavaScript file into the current shell environment
+        enableTelemetry                            Enables collection of anonymous usage data to improve the mongosh CLI
+        disableTelemetry                           Disables collection of anonymous usage data to improve the mongosh CLI
+        passwordPrompt                             Prompts the user for a password
+        sleep                                      Sleep for the specified number of milliseconds
+        print                                      Prints the contents of an object to the output
+        printjson                                  Alias for print()
+        cls                                        Clears the screen like console.clear()
+        isInteractive                              Returns whether the shell will enter or has entered interactive mode
+    
+      For more information on usage: https://docs.mongodb.com/manual/reference/method
+    ```
+    
+- `db.help()`: 데이터베이스 수준의 도움말
+    
+    ```bash
+    myDB> db.help()
+    
+      Database Class:
+    
+        getMongo                                   Returns the current database connection
+        getName                                    Returns the name of the DB
+        getCollectionNames                         Returns an array containing the names of all collections in the current database.
+        getCollectionInfos                         Returns an array of documents with collection information, i.e. collection name and options, for the current database.
+        runCommand                                 Runs an arbitrary command on the database.
+        adminCommand                               Runs an arbitrary command against the admin database.
+        aggregate                                  Runs a specified admin/diagnostic pipeline which does not require an underlying collection.
+        getSiblingDB                               Returns another database without modifying the db variable in the shell environment.
+        getCollection                              Returns a collection or a view object that is functionally equivalent to using the db.<collectionName>.
+        dropDatabase                               Removes the current database, deleting the associated data files.
+        createUser                                 Creates a new user for the database on which the method is run. db.createUser() returns a duplicate user error if the user already exists on the database.
+        updateUser                                 Updates the user’s profile on the database on which you run the method. An update to a field completely replaces the previous field’s values. This includes updates to the user’s roles array.
+        changeUserPassword                         Updates a user’s password. Run the method in the database where the user is defined, i.e. the database you created the user.
+        logout                                     Ends the current authentication session. This function has no effect if the current session is not authenticated.
+        dropUser                                   Removes the user from the current database.
+        dropAllUsers                               Removes all users from the current database.
+        auth                                       Allows a user to authenticate to the database from within the shell.
+        grantRolesToUser                           Grants additional roles to a user.
+        revokeRolesFromUser                        Removes a one or more roles from a user on the current database.
+        getUser                                    Returns user information for a specified user. Run this method on the user’s database. The user must exist on the database on which the method runs.
+        getUsers                                   Returns information for all the users in the database.
+        createCollection                           Create new collection
+        createView                                 Create new view
+        createRole                                 Creates a new role.
+        updateRole                                 Updates the role’s profile on the database on which you run the method. An update to a field completely replaces the previous field’s values.
+        dropRole                                   Removes the role from the current database.
+        dropAllRoles                               Removes all roles from the current database.
+        grantRolesToRole                           Grants additional roles to a role.
+        revokeRolesFromRole                        Removes a one or more roles from a role on the current database.
+        grantPrivilegesToRole                      Grants additional privileges to a role.
+        revokePrivilegesFromRole                   Removes a one or more privileges from a role on the current database.
+        getRole                                    Returns role information for a specified role. Run this method on the role’s database. The role must exist on the database on which the method runs.
+        getRoles                                   Returns information for all the roles in the database.
+        currentOp                                  Calls the currentOp command. Returns a document that contains information on in-progress operations for the database instance. The db.currentOp() method wraps the database command currentOp.
+        killOp                                     Calls the killOp command. Terminates an operation as specified by the operation ID. To find operations and their corresponding IDs, see $currentOp or db.currentOp().
+        shutdownServer                             Calls the shutdown command. Shuts down the current mongod or mongos process cleanly and safely. You must issue the db.shutdownServer() operation against the admin database.
+        fsyncLock                                  Calls the fsync command. Forces the mongod to flush all pending write operations to disk and locks the entire mongod instance to prevent additional writes until the user releases the lock with a corresponding db.fsyncUnlock() command.
+        fsyncUnlock                                Calls the fsyncUnlock command. Reduces the lock taken by db.fsyncLock() on a mongod instance by 1.
+        version                                    returns the db version. uses the buildinfo command
+        serverBits                                 returns the db serverBits. uses the buildInfo command
+        isMaster                                   Calls the isMaster command
+        hello                                      Calls the hello command
+        serverBuildInfo                            returns the db serverBuildInfo. uses the buildInfo command
+        serverStatus                               returns the server stats. uses the serverStatus command
+        stats                                      returns the db stats. uses the dbStats command
+        hostInfo                                   Calls the hostInfo command
+        serverCmdLineOpts                          returns the db serverCmdLineOpts. uses the getCmdLineOpts command
+        rotateCertificates                         Calls the rotateCertificates command
+        printCollectionStats                       Prints the collection.stats for each collection in the db.
+        getFreeMonitoringStatus                    Calls the getFreeMonitoringStatus command
+        disableFreeMonitoring                      returns the db disableFreeMonitoring. uses the setFreeMonitoring command
+        enableFreeMonitoring                       returns the db enableFreeMonitoring. uses the setFreeMonitoring command
+        getProfilingStatus                         returns the db getProfilingStatus. uses the profile command
+        setProfilingLevel                          returns the db setProfilingLevel. uses the profile command
+        setLogLevel                                returns the db setLogLevel. uses the setParameter command
+        getLogComponents                           returns the db getLogComponents. uses the getParameter command
+        cloneDatabase                              deprecated, non-functional
+        cloneCollection                            deprecated, non-functional
+        copyDatabase                               deprecated, non-functional
+        commandHelp                                returns the db commandHelp. uses the passed in command with help: true
+        listCommands                               Calls the listCommands command
+        getLastErrorObj                            Calls the getLastError command
+        getLastError                               Calls the getLastError command
+        printShardingStatus                        Calls sh.status(verbose)
+        printSecondaryReplicationInfo              Prints secondary replicaset information
+        getReplicationInfo                         Returns replication information
+        printReplicationInfo                       Formats sh.getReplicationInfo
+        printSlaveReplicationInfo                  DEPRECATED. Use db.printSecondaryReplicationInfo
+        setSecondaryOk                             This method is deprecated. Use db.getMongo().setReadPref() instead
+        watch                                      Opens a change stream cursor on the database
+        sql                                        (Experimental) Runs a SQL query against Atlas Data Lake. Note: this is an experimental feature that may be subject to change in future releases.
+    ```
+    
+- `db.foo.help()`: 컬렉션 수준의 도움말
+    
+    ```bash
+    myDB> db.foo.help()
+    
+      Collection Class:
+    
+        aggregate                                  Calculates aggregate values for the data in a collection or a view.
+        bulkWrite                                  Performs multiple write operations with controls for order of execution.
+        count                                      Returns the count of documents that would match a find() query for the collection or view.
+        countDocuments                             Returns the count of documents that match the query for a collection or view.
+        deleteMany                                 Removes all documents that match the filter from a collection.
+        deleteOne                                  Removes a single document from a collection.
+        distinct                                   Finds the distinct values for a specified field across a single collection or view and returns the results in an array.
+        estimatedDocumentCount                     Returns the count of all documents in a collection or view.
+        find                                       Selects documents in a collection or view.
+        findAndModify                              Modifies and returns a single document.
+        findOne                                    Selects documents in a collection or view.
+        renameCollection                           Renames a collection.
+        findOneAndDelete                           Deletes a single document based on the filter and sort criteria, returning the deleted document.
+        findOneAndReplace                          Modifies and replaces a single document based on the filter and sort criteria.
+        findOneAndUpdate                           Updates a single document based on the filter and sort criteria.
+        insert                                     Inserts a document or documents into a collection.
+        insertMany                                 Inserts multiple documents into a collection.
+        insertOne                                  Inserts a document into a collection.
+        isCapped                                   Checks if a collection is capped
+        remove                                     Removes documents from a collection.
+        replaceOne                                 Replaces a single document within the collection based on the filter.
+        update                                     Modifies an existing document or documents in a collection.
+        updateMany                                 Updates all documents that match the specified filter for a collection.
+        updateOne                                  Updates a single document within the collection based on the filter.
+        compactStructuredEncryptionData            Compacts structured encryption data
+        convertToCapped                            calls {convertToCapped:'coll', size:maxBytes}} command
+        createIndexes                              Creates one or more indexes on a collection
+        createIndex                                Creates one index on a collection
+        ensureIndex                                Creates one index on a collection
+        getIndexes                                 Returns an array that holds a list of documents that identify and describe the existing indexes on the collection.
+        getIndexSpecs                              Alias for getIndexes. Returns an array that holds a list of documents that identify and describe the existing indexes on the collection.
+        getIndices                                 Alias for getIndexes. Returns an array that holds a list of documents that identify and describe the existing indexes on the collection.
+        getIndexKeys                               Return an array of key patterns for indexes defined on collection
+        dropIndexes                                Drops the specified index or indexes (except the index on the _id field) from a collection.
+        dropIndex                                  Drops or removes the specified index from a collection.
+        totalIndexSize                             Reports the total size used by the indexes on a collection.
+        reIndex                                    Rebuilds all existing indexes on a collection.
+        getDB                                      Get current database.
+        getMongo                                   Returns the Mongo object.
+        dataSize                                   This method provides a wrapper around the size output of the collStats (i.e. db.collection.stats()) command.
+        storageSize                                The total amount of storage allocated to this collection for document storage.
+        totalSize                                  The total size in bytes of the data in the collection plus the size of every index on the collection.
+        drop                                       Removes a collection or view from the database.
+        exists                                     Returns collection infos if the collection exists or null otherwise.
+        getFullName                                Returns the name of the collection prefixed with the database name.
+        getName                                    Returns the name of the collection.
+        runCommand                                 Runs a db command with the given name where the first param is the collection name.
+        explain                                    Returns information on the query plan.
+        stats                                      Returns statistics about the collection.
+        latencyStats                               returns the $latencyStats aggregation for the collection. Takes an options document with an optional boolean 'histograms' field.
+        initializeOrderedBulkOp                    Initializes an ordered bulk command. Returns an instance of Bulk
+        initializeUnorderedBulkOp                  Initializes an unordered bulk command. Returns an instance of Bulk
+        getPlanCache                               Returns an interface to access the query plan cache for a collection. The interface provides methods to view and clear the query plan cache.
+        mapReduce                                  Calls the mapReduce command
+        validate                                   Calls the validate command. Default full value is false
+        getShardVersion                            Calls the getShardVersion command
+        getShardDistribution                       Prints the data distribution statistics for a sharded collection.
+        watch                                      Opens a change stream cursor on the collection
+        hideIndex                                  Hides an existing index from the query planner.
+        unhideIndex                                Unhides an existing index from the query planner.
+    ```
+    
+
+- 함수의 기능을 알고 싶으면 함수명을 괄호 없이 입력하면 된다 → 자바스크립트 소스코드가 출력된다.
+    
+    ```bash
+    myDB> db.movies.updateOne
+    [Function: updateOne] AsyncFunction {
+      apiVersions: [ 1, Infinity ],
+      serverVersions: [ '3.2.0', '999.999.999' ],
+      returnsPromise: true,
+      topologies: [ 'ReplSet', 'Sharded', 'LoadBalanced', 'Standalone' ],
+      returnType: { type: 'unknown', attributes: {} },
+      deprecated: false,
+      platforms: [ 'Compass', 'Browser', 'CLI' ],
+      isDirectShellCommand: false,
+      acceptsRawInput: false,
+      shellCommandCompleter: undefined,
+      help: [Function (anonymous)] Help
+    }
+    ```
+    
+
+### 7-2. 셸에서 스크립트 실행하기
+
+---
+
+- 자바스크립트 파일을 셸로 전달해 실행할 수도 있다. mongo 셸은 각 스크립트를 실행하고 빠져나온다.
+    
+    ```bash
+    $ mongosh script1.js script2.js script3.js
+    Current Mongosh Log ID:	634d877c189f8c65c96b0764
+    Connecting to:		mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+1.6.0
+    Using MongoDB:		6.0.1
+    Using Mongosh:		1.6.0
+    
+    For mongosh info see: https://docs.mongodb.com/mongodb-shell/
+    
+    ------
+       The server generated these startup warnings when booting
+       2022-10-18T01:32:11.422+09:00: Access control is not enabled for the database. Read and write access to data and configuration is unrestricted
+    ------
+    
+    ------
+       Enable MongoDB's free cloud-based monitoring service, which will then receive and display
+       metrics about your deployment (disk utilization, CPU, operation statistics, etc).
+    
+       The monitoring data will be available on a MongoDB website with a unique URL accessible to you
+       and anyone you share the URL with. MongoDB may use this information to make product
+       improvements and to suggest MongoDB products and deployment options to you.
+    
+       To enable free monitoring, run the following command: db.enableFreeMonitoring()
+       To permanently disable this reminder, run the following command: db.disableFreeMonitoring()
+    ------
+    
+    Loading file: script1.js
+    ..
+    ```
+    
+
+- 셸 보조자와 대응하는 자바스크립트 용법
+    
+    
+    | 셸 보조자 | 같은 의미의 자바스크립트 |
+    | --- | --- |
+    | use video | db.getSisterDB("video") |
+    | show dbs | db.getMongo().getDBs() |
+    | show collections | db.getCollectionNames() |
+- 스크립트를 사용해 셸에 변수를 입력할 수도 있다.
+    
+    ```bash
+    // defineConnectTo.js
+    /**
+     * 데이터베이스에 연결하고 db를 설정
+     */
+    var connectTo = function(port, dbname) {
+        if (!port) {
+            port = 27017;
+        }
+    
+        if (!dbname) {
+            dbname = "test";
+        }
+    
+        db = connect("localhost:"+port+"/"+dbname);
+        return db;
+    }
+    
+    $ mongosh
+    ..
+    
+    test> typeof connectTo
+    undefined
+    test> load('defineConnectTo.js') # 스크립트를 셸에 로드
+    true
+    test> typeof connectTo
+    function
+    test>
+    ```
+    
+- 기본적으로 셸은 셸을 시작한 디렉터리에서 스크립트를 찾는다.(셸을 시작한 디렉터리가 어느 것인지 확인하려면 `run("pwd")` 명령어를 사용한다)
+    - `mongosh` 내 네이티브 메소드들 ([reference](https://www.mongodb.com/docs/v6.0/reference/method/js-native/#std-label-native-in-mongosh))
+        
+        ```bash
+        test> process.cwd()
+        /Users/kim-yoonhee
+        ```
+        
+
+### 7-3. `.mongorc.js` 만들기
+
+---
+
+- 자주 로드되는 스크립트를 (셸이 시작할 때마다 실행되는) `.mongorc.js` 파일에 넣을 수 있다.
+- `mongosh`의 경우, `.mongoshrc.js`다.
+    - ex> 홈 디렉터리에 파일을 만들고 셸을 시작할 때마다 문구가 뜬다.
+        
+        ```bash
+        // .mongoshrc.js
+        var compliment = ["attractive", "intelligent", "like Batman"];
+        var index = Math.floor(Math.random()*3);
+        
+        print("Hello, you're looking particularly "+compliment[index]+" today!");
+        
+        $ mongosh
+        ..
+        Hello, you're looking particularly attractive today!
+        ```
+        
+
+- 이 스크립트로 사용하고 싶은 전역 변수를 설정하고, 긴 별칭을 짧게 만들고, 내장 함수를 재정의한다.
+- 일반적인 용법 중 하나는 더 '위험한' 셸 보조자를 제거하는 것이다.
+    - `dropDatabase`나 `deleteIndexes` 같은 함수가 아무것도 수행하지 않게 재정의하거나 모두 선언 해제한다.
+        
+        ```jsx
+        var no = function() {
+            print("Mot on my watch.");
+        };
+        
+        // 데이터베이스 삭제 방지
+        db.dropDatabase = DB.prototype.dropDatabase = no;
+        
+        // 컬렉션 삭제 방지
+        DBCollection.prototype.drop = no;
+        
+        // 인덱스 삭제 방지
+        DBCollection.prototype.dropIndex = no;
+        
+        // 인덱스 삭제 방지
+        DBCollection.prototype.dropIndexes = no;
+        ```
+        
+- 셸을 시작할 때 `—-norc` 옵션을 사용해 `.mongoshrc.js` 로딩을 비활성화할 수 있다.
+
 - 참고
     - [https://www.mongodb.com/docs/mongodb-shell/install/](https://www.mongodb.com/docs/mongodb-shell/install/)
     - [https://devbksheen.tistory.com/m/entry/몽고DB의-데이터형](https://devbksheen.tistory.com/m/entry/%EB%AA%BD%EA%B3%A0DB%EC%9D%98-%EB%8D%B0%EC%9D%B4%ED%84%B0%ED%98%95)
