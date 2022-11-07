@@ -1,7 +1,5 @@
 # Chapter 3. 도큐먼트 생성, 갱신, 삭제
 
-![Untitled](./image/3/Untitled.png)
-
 - docker 로 mongo 재설치
     
     ```bash
