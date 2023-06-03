@@ -23,6 +23,8 @@ Today I Learned
 
 - [실전 카프카 개발부터 운영까지](https://github.com/kyh1126/TIL/tree/main/book/%EC%8B%A4%EC%A0%84_%EC%B9%B4%ED%94%84%EC%B9%B4_%EA%B0%9C%EB%B0%9C%EB%B6%80%ED%84%B0_%EC%9A%B4%EC%98%81%EA%B9%8C%EC%A7%80)
 
+- [클린 아키텍처](https://github.com/kyh1126/TIL/tree/main/book/%ED%81%B4%EB%A6%B0_%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98)
+
 
 ## Lecture
 
