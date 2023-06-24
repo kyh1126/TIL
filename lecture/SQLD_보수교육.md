@@ -817,10 +817,129 @@ B. 특성
 
 ---
 
+![Untitled](./image/sqld/Untitled%2047.png)
+
+- 표준화(All ata Base)
+    - 모든 관계형 DBMS에서 동일하게 사용될 수 있다.
+    - ISO/ANSI 표준
+- 관계형 모델에 근거
+    - 자료 추출에 대한 물리적 구조로부터 독립
+    - 수학의 집합론을 바탕으로 개발
+- 비 절차형 언어(Non-Procedural)
+- 고급 언어이고 영어와 비슷한 구조
+- 모든 처리를 SQL로 수행(All Users)
+    - DBA, 일반 사용자, 프로그래머
+    - System 관리, 보안관리, DB Access, DB update
+
 ## 나. SQL 문법
 
 ---
 
+### 1) 함수(Function)
+
+---
+
+![Untitled](./image/sqld/Untitled%2048.png)
+
+![Untitled](./image/sqld/Untitled%2049.png)
+
+![Untitled](./image/sqld/Untitled%2050.png)
+
+![Untitled](./image/sqld/Untitled%2051.png)
+
+![Untitled](./image/sqld/Untitled%2052.png)
+
+![Untitled](./image/sqld/Untitled%2053.png)
+
+### 2) 연산자(Operator)
+
+---
+
+![Untitled](./image/sqld/Untitled%2054.png)
+
+![Untitled](./image/sqld/Untitled%2055.png)
+
+![Untitled](./image/sqld/Untitled%2056.png)
+
+### 3) 명령어
+
+---
+
+- Data Definition Language
+    - CREATE, ALTER, DROP, RENAME
+- Data Manipulation Language
+    - (SELECT), INSERT, UPDATE, DELETE
+    - COMMIT: 논리적으로 서로 연관된 일련의 데이터 처리문을 영구히 기록.
+    - ROLLBACK: 전체 트랜잭션 또는 savepoint 이후의 트랜잭션을 취소하여 원래의 상태대로 복귀시킨다.
+- Data Control Language
+    - GRANT, REVOKE, AUDIT, LOCK, ROLE, SESSION 등
+- PL/SQL: Oracle
+    - Data Definition Language
+
 ## 다. SQL 실습
 
 ---
+
+### 1) 명령어 실습-1: SQL 문에 대한 답을 찾기
+
+---
+
+![Untitled](./image/sqld/Untitled%2057.png)
+
+![Untitled](./image/sqld/Untitled%2058.png)
+
+![Untitled](./image/sqld/Untitled%2059.png)
+
+![Untitled](./image/sqld/Untitled%2060.png)
+
+![Untitled](./image/sqld/Untitled%2061.png)
+
+![Untitled](./image/sqld/Untitled%2062.png)
+
+![Untitled](./image/sqld/Untitled%2063.png)
+
+![Untitled](./image/sqld/Untitled%2064.png)
+
+![Untitled](./image/sqld/Untitled%2065.png)
+
+![Untitled](./image/sqld/Untitled%2066.png)
+
+### 2) 명령어 실습-2: SQL 문을 완성하고 실행시켜 보기
+
+---
+
+![Untitled](./image/sqld/Untitled%2067.png)
+
+![Untitled](./image/sqld/Untitled%2068.png)
+
+![Untitled](./image/sqld/Untitled%2069.png)
+
+![Untitled](./image/sqld/Untitled%2070.png)
+
+![Untitled](./image/sqld/Untitled%2071.png)
+
+![Untitled](./image/sqld/Untitled%2072.png)
+
+![Untitled](./image/sqld/Untitled%2073.png)
+
+![Untitled](./image/sqld/Untitled%2074.png)
+
+![Untitled](./image/sqld/Untitled%2075.png)
+
+![Untitled](./image/sqld/Untitled%2076.png)
+
+![Untitled](./image/sqld/Untitled%2077.png)
+
+![Untitled](./image/sqld/Untitled%2078.png)
+
+![Untitled](./image/sqld/Untitled%2079.png)
+
+![Untitled](./image/sqld/Untitled%2080.png)
+
+![Untitled](./image/sqld/Untitled%2081.png)
+
+![Untitled](./image/sqld/Untitled%2082.png)
+
+![Untitled](./image/sqld/Untitled%2083.png)
+
+![Untitled](./image/sqld/Untitled%2084.png)
