@@ -92,10 +92,6 @@
     - 사용자는 브라우저라는 클라이언트를 통해 서버에 HTTP 요청을 전송할 수 있다.
     - 그리고 그 결과인 HTTP 응답을 브라우저에 렌더링(화면에 디스플레이)하는 것이다.
 
-### 예제 1-1. HTTP 요청
-
----
-
 ```powershell
 GET / HTTP/1.1
 Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
@@ -122,10 +118,6 @@ Connection: keep-alive
     | POST | 리소스에 대해 임의의 작업(ex> 생성, 수정)을 할 때 사용 |
     | PUT | 리소스를 대체할 때 사용 |
     | DELETE | 리소스를 삭제할 때 사용 |
-
-### 예제 1-2. HTTP 응답
-
----
 
 ```powershell
 HTTP/1.1 200
@@ -164,10 +156,6 @@ Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
 - JSON(JavaScript Object Notation): '오브젝트'를 표현하기 위한 문자열
 - 오브젝트: 메모리상에 존재하는 어떤 자료구조
 
-### 예제 1-3. 자바 TodoItem 클래스
-
----
-
 ```java
 public class TodoItem {
   String title;
@@ -181,10 +169,6 @@ public class TodoItem {
 ```
 
 - 이 클래스를 이용해 오브젝트를 생성하면 예제 1-4와 같다.
-
-### 예제 1-4. TodoItem 오브젝트
-
----
 
 ```java
 new TodoItem("myTitle", false);
@@ -200,10 +184,6 @@ new TodoItem("myTitle", false);
     - 역직렬화: 그 반대 작업
 - 어떤 형태로 오브젝트를 직렬화할 것인가 → JSON
 - JSON: 키-값의 형태로 오브젝트를 표현한 문자열
-
-### 예제 1-5. JSON 형태의 TodoItem 오브젝트
-
----
 
 ```json
 {
@@ -225,10 +205,6 @@ new TodoItem("myTitle", false);
     | 오브젝트 | 중괄호로 감싼 형태 ex> {"title": "myTitle"} |
     | 배열 | 대괄호로 감싼 형태 ex> ["abc", "myTitle"] 등 |
 
-### 예제 1-6. JSON 예제
-
----
-
 ```json
 {
     "myString": "hello", // 문자열
@@ -245,10 +221,6 @@ new TodoItem("myTitle", false);
 
 - 왜 이런 형태의 문자를 다른 이름이 아니라 자바스크립트 오브젝트 노테이션이라고 부를까?
     - 이 형식이 자바스크립트에서 오브젝트를 생성하는 형식(MDNContributors, 2022)과 같기 때문
-
-### 예제 1-7. 자바스크립트에서 오브젝트를 생성하는 방법
-
----
 
 ```jsx
 var object = {
@@ -267,10 +239,6 @@ var object = {
 - 서버란 프로그램이다.
     - 이 프로그램은 지정된 포트(ex> 8080)에 소켓을 열고 클라이언트가 연결할 때까지 무한 대기하며 기다린다.
     - 그러다가 클라이언트가 연결하면 해당 클라이언트 소켓에서 요청을 받아와 수행하고 응답을 작성해 전달한다.
-
-### 예제 1-8. 아주 간단한 서버 예
-
----
 
 ```java
 import java.net.ServerSocket;
