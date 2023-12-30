@@ -95,7 +95,7 @@ phpinfo();
 - [https://www.php.net/manual/en/language.types.intro.php](https://www.php.net/manual/en/language.types.intro.php)
     - `bool`
     - `int`
-    - `float` (floating-point number)
+    - `float` (floating-point number)
     - `string`
     - `array`
     - `object`

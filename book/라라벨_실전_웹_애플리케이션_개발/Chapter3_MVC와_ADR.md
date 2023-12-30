@@ -81,16 +81,16 @@
         ```php
         .
         ├── app
-        │   ├── Services
-        │   │   └── AccountPurchaseModel.php
-        │   └── Http 
-        │       └── Actions
-        │           └── User
-        │               └── CommentAction.php
+        │   ├── Services
+        │   │   └── AccountPurchaseModel.php
+        │   └── Http 
+        │       └── Actions
+        │           └── User
+        │               └── CommentAction.php
         ├── resources
         │   ...
-        │   └── presentations
-        │       └── hello.blade.php
+        │   └── presentations
+        │       └── hello.blade.php
         ...
         ```
         
@@ -257,19 +257,19 @@
     ```php
     .
     ├── app
-    │   ├── Console
-    │   │   └── Kernel.php
-    │   ├── Domain
-    │   │   └── Book
-    │   │       ├── Entity
-    │   │       └── Services
-    │   ├── Http
-    │   │   ├── Actions
-    │   │   │   └── UserIndexAction.php
+    │   ├── Console
+    │   │   └── Kernel.php
+    │   ├── Domain
+    │   │   └── Book
+    │   │       ├── Entity
+    │   │       └── Services
+    │   ├── Http
+    │   │   ├── Actions
+    │   │   │   └── UserIndexAction.php
     │   │   ├── Kernel.php
     │   │   ├── Middleware
     │   │   └── Responder
-    │   │       └── BookResponder.php
+    │   │       └── BookResponder.php
     │   ├── Policies
     │   └── Providers
     ...

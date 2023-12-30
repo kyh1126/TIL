@@ -132,7 +132,7 @@
 
 ---
 
-- 1️⃣ 일반 람다를 받는 `buildString`: 한 `StringBuilder` 객체에 여러 내용을 추가할 수 있다.
+- 1️⃣ 일반 람다를 받는 `buildString`: 한 `StringBuilder` 객체에 여러 내용을 추가할 수 있다.
     
     ```kotlin
     fun buildString(builderAction: (StringBuilder) -> Unit): String { // 함수 타입인 파라미터 정의
@@ -150,8 +150,8 @@
     }
     ```
     
-- 2️⃣ 수신 객체 지정 람다: 메소드 이름 앞에 `it.`을 일일이 넣지 않고 더 간단하게 호출
-    - 람다의 인자 중 하나에게 수신 객체라는 상태를 부여하면 이름과 마침표를 명시하지 않아도 그 인자의 멤버를 바로 사용할 수 있다.
+- 2️⃣ 수신 객체 지정 람다: 메소드 이름 앞에 `it.`을 일일이 넣지 않고 더 간단하게 호출
+    - 람다의 인자 중 하나에게 수신 객체라는 상태를 부여하면 이름과 마침표를 명시하지 않아도 그 인자의 멤버를 바로 사용할 수 있다.
         - 클래스 멤버 안에서 보통 그렇듯이 모호한 경우가 아니라면 `this.`를 명시할 필요가 없다.
         
         ![11.1 수신 객체 타입이 `String`이며 파라미터로 두 `Int`를 받고 `Unit`을 반환하는 확장 함수 타입 정의](./image/11/Untitled.png)
@@ -180,7 +180,7 @@
     
     11.2 buildString 함수(수신 객체 지정 람다)의 인자는 확장 함수 타입(builderAction)의 파라미터와 대응한다. 호출된 람다 본문 안에서는 수신 객체(sb)가 묵시적 수신 객체(`this`)가 된다.
     
-- 3️⃣ 확장 함수 타입의 변수를 정의: 변수를 마치 확장 함수처럼 호출하거나 수신 객체 지정 람다를 요구하는 함수에게 인자로 넘길 수 있다.
+- 3️⃣ 확장 함수 타입의 변수를 정의: 변수를 마치 확장 함수처럼 호출하거나 수신 객체 지정 람다를 요구하는 함수에게 인자로 넘길 수 있다.
     
     ```kotlin
     val appendExc1: StringBuilder.() -> Unit = { this.append("!") }
@@ -270,7 +270,7 @@
 ---
 
 - 내부 DSL 을 사용하면 일반 코드와 마찬가지로 반복되는 내부 DSL 코드 조각을 새 함수로 묶어서 재사용할 수 있다.
-- [부트스트랩 라이브러리](https://getbootstrap.com/) 에서 제공하는 드롭다운 메뉴가 있는 HTML 페이지를 코틀린 빌더를 사용해 생성
+- [부트스트랩 라이브러리](https://getbootstrap.com/) 에서 제공하는 드롭다운 메뉴가 있는 HTML 페이지를 코틀린 빌더를 사용해 생성
     - 부트스트랩 라이브러리 버전
         
         ```html
@@ -479,7 +479,7 @@
     
 
 - `dependencies`는 `DependencyHandler` 클래스의 인스턴스
-- `DependencyHandler` 구현 👉 `invoke` 안에서 `DependencyHandler` 타입의 객체를 따로 명시하지 않고 `compile()`을 호출할 수 있다.
+- `DependencyHandler` 구현 👉 `invoke` 안에서 `DependencyHandler` 타입의 객체를 따로 명시하지 않고 `compile()`을 호출할 수 있다.
     
     ```kotlin
     class DependencyHandler {
@@ -647,7 +647,7 @@
     }
     ```
     
-- 각 칼럼의 속성을 지정하는 방법 👉 멤버 확장
+- 각 칼럼의 속성을 지정하는 방법 👉 멤버 확장
     
     ```kotlin
     val id = integer("id").autoIncrement().primaryKey()

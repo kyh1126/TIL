@@ -194,7 +194,7 @@ fun buyCoffee(cc: CreditCard): Coffee {
     - 이런 제약을 도입하면 치환 모델(substitution model)을 통해 자연스럽고 단순하게 프로그램 평가에 대한 추론이 가능해진다.
     - ex> `String`의 `reversed()`
 
-- 참조 투명하지 않은 함수 👉  프로그램의 동작에 대해 추론하기가 훨씬 더 어려워진다.
+- 참조 투명하지 않은 함수 👉  프로그램의 동작에 대해 추론하기가 훨씬 더 어려워진다.
     - ex> `StringBuilder` 클래스에 정의된 `append` 함수
         - `StringBuilder`에 작용하며 객체 내부를 변화시킨다. 호출될 때마다 `StringBuilder`의 이전 상태가 파괴된다.
         

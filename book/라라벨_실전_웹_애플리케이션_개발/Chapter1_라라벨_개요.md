@@ -457,10 +457,10 @@
     jenny@gim-yunhuiui-MacBookPro sample % tree ./resources -L 2 -F
     ./resources/
     ├── css/
-    │   └── app.css
+    │   └── app.css
     ├── js/
-    │   ├── app.js
-    │   └── bootstrap.js
+    │   ├── app.js
+    │   └── bootstrap.js
     └── views/
         └── welcome.blade.php
     ```
@@ -625,12 +625,12 @@
     jenny@gim-yunhuiui-MacBookPro sample % tree database -F
     database/
     ├── factories/
-    │   └── UserFactory.php
+    │   └── UserFactory.php
     ├── migrations/
-    │   ├── 2014_10_12_000000_create_users_table.php
-    │   ├── 2014_10_12_100000_create_password_reset_tokens_table.php
-    │   ├── 2019_08_19_000000_create_failed_jobs_table.php
-    │   └── 2019_12_14_000001_create_personal_access_tokens_table.php
+    │   ├── 2014_10_12_000000_create_users_table.php
+    │   ├── 2014_10_12_100000_create_password_reset_tokens_table.php
+    │   ├── 2019_08_19_000000_create_failed_jobs_table.php
+    │   └── 2019_12_14_000001_create_personal_access_tokens_table.php
     └── seeders/
         └── DatabaseSeeder.php
     ```

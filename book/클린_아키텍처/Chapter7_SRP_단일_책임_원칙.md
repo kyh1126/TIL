@@ -31,7 +31,7 @@
 ---
 
 - 이 문제의 해결책은 다양한데, 그 모두가 메서드를 각기 다른 클래스로 이동시키는 방식이다.
-- 1️⃣ 데이터와 메서드를 분리하는 방식
+- 1️⃣ 데이터와 메서드를 분리하는 방식
     
     ![7-3. 새 클래스는 서로의 존재를 알지 못한다.](./image/7/Untitled%201.png)
     
@@ -39,7 +39,7 @@
     
     - 장점: ‘우연한 중복’을 피할 수 있다.
     - 단점: 개발자가 세 가지 클래스를 인스턴스화하고 추적해야 한다.
-- 2️⃣ 파사드 패턴: [https://wildeveloperetrain.tistory.com/99](https://wildeveloperetrain.tistory.com/99)
+- 2️⃣ 파사드 패턴: [https://wildeveloperetrain.tistory.com/99](https://wildeveloperetrain.tistory.com/99)
     
     ![7-4. 퍼사드(Facade) 패턴](./image/7/Untitled%202.png)
     

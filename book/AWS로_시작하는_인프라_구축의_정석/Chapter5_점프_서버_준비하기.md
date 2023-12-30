@@ -224,7 +224,7 @@ yourname.pem
     ```
     
     - `Permissions 0644 for 'yourname.pem' are too open.` 에러
-        - pem 파일의 권한을 아래와 같이 수정해주었다.
+        - pem 파일의 권한을 아래와 같이 수정해주었다.
             
             ```bash
             jenny@M-N-KIMYOONHEE .ssh % chmod 400 yourname.pem
@@ -266,7 +266,7 @@ yourname.pem
 - 누출이 발생했을 때는 먼저 액세스 키를 삭제해야 한다. 잘못 실행된 리소스도 모두 삭제한다.
     - AWS에 이용료를 면제받은 경우도 찾아볼 수 있다. 그러나 반드시 면제를 받을 수 있는 것 X
 
-👉 부주의하게 액세스 키를 소스 코드 관리 도구의 관리 대상으로 설정하거나 애플리케이션 리소스로 삽입하지 않아야 한다.
+👉 부주의하게 액세스 키를 소스 코드 관리 도구의 관리 대상으로 설정하거나 애플리케이션 리소스로 삽입하지 않아야 한다.
 
 - AWS는 액세스 키 등이 깃허브와 같은 저장소에 업로드되는 것을 방지하는 '[git-secrets](https://github.com/awslabs/git-secrets)'라는 도구를 제공하므로 이를 적극적으로 이용한다.
 </aside>
