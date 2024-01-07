@@ -202,4 +202,6 @@
     ```
     
     - `Thread-3 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection`에서 멈춘다
-- NAT 게이트웨이 삭제, EC2 종료
+- NAT 게이트웨이 삭제, EC2 종료 (라우팅 테이블 - private도 같이 변경해보기)
+    
+    → 라우팅 테이블 private 서브넷 용에 선택되어 있는 NAT 게이트웨이 ID 변경해주기
