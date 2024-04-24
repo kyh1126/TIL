@@ -1185,7 +1185,7 @@
 
 - `@ResponseBody` 사용 원리
 
-    ![Untitled.png](../image/sprimgmvc1/6/Untitled.png)
+    ![Untitled.png](image/6/Untitled.png)
 
     - HTTP의 BODY에 문자 내용을 직접 반환
     - `viewResolver` 대신 `HttpMessageConverter`가 동작
@@ -1278,14 +1278,14 @@
 
 - 다시 보는 SpringMVC 구조
 
-    ![Untitled1.png](../image/sprimgmvc1/6/Untitled%201.png)
+    ![Untitled1.png](image/6/Untitled%201.png)
 
     - 위에서 HTTP 메시지 컨버터는 어디서 사용될까?
         - `@RequestMapping`을 처리하는 핸들러 어댑터인 `RequestMappingHandlerAdapter`(요청 매핑 핸들러 어댑터)에 있다.
 
 - `RequestMappingHandlerAdapter` 동작 방식
 
-    ![Untitled2.png](../image/sprimgmvc1/6/Untitled%202.png)
+    ![Untitled2.png](image/6/Untitled%202.png)
 
 - `ArgumentResolver`: 정확히는 `HandlerMethodArgumentResolver`
     - 애노테이션 기반 컨트롤러를 처리하는 `RequestMappingHandlerAdaptor`는 `ArgumentResolver`를 호출해서 컨트롤러(핸들러)가 필요로 하는 다양한 파라미터의 값(객체)을 생성한다.
@@ -1316,7 +1316,7 @@
 
 - HTTP 메시지 컨버터 위치
 
-    ![Untitled3.png](../image/sprimgmvc1/6/Untitled%203.png)
+    ![Untitled3.png](image/6/Untitled%203.png)
 
     - 스프링 MVC 는 `@RequestBody`, `@ResponseBody`가 있으면 `RequestResponseBodyMethodProcessor`(ArgumentResolver), `HttpEntity`가 있으면 `HttpEntityMethodProcessor`(ArgumentResolver)를 사용한다.
 

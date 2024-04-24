@@ -493,15 +493,15 @@
 
 - MVC 패턴 이전
   
-    ![Untitled.png](../image/sprimgmvc1/3/Untitled.png)
+    ![Untitled.png](image/3/Untitled.png)
 
 - MVC 패턴1
 
-    ![Untitled1.png](../image/sprimgmvc1/3/Untitled%201.png)
+    ![Untitled1.png](image/3/Untitled%201.png)
 
 - MVC 패턴2: 이걸 많이 쓴다.
 
-    ![Untitled2.png](../image/sprimgmvc1/3/Untitled%202.png)
+    ![Untitled2.png](image/3/Untitled%202.png)
 
 ### 적용
 

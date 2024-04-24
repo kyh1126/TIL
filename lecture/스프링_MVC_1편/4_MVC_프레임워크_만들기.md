@@ -21,7 +21,7 @@
 
 - V1 구조
 
-    ![Untitled.png](../image/sprimgmvc1/4/Untitled.png)
+    ![Untitled.png](image/4/Untitled.png)
 
 - ControllerV1: 서블릿과 비슷한 모양의 컨트롤러 인터페이스 도입
 
@@ -153,7 +153,7 @@
 
 - V2 구조
 
-    ![Untitled1.png](../image/sprimgmvc1/4/Untitled%201.png)
+    ![Untitled1.png](image/4/Untitled%201.png)
 
 - MyView
 
@@ -287,7 +287,7 @@
         - /WEB-INF/views/new-form.jsp → new-form
 - V3 구조
 
-    ![Untitled2.png](../image/sprimgmvc1/4/Untitled%202.png)
+    ![Untitled2.png](image/4/Untitled%202.png)
 
 - ModelView
     - 지금까지 컨트롤러에서 서블릿에 종속적인 HttpServletRequest 를 사용했다. 그리고 Model 도 `request.setAttribute()` 를 통해 데이터를 저장하고 뷰에 전달했다.
@@ -485,7 +485,7 @@
 - 문제: 컨트톨러 인터페이스를 구현하는 개발자는 항상 ModelView 를 생성 & 반환해야 한다.
 - V4 구조
 
-    ![Untitled3.png](../image/sprimgmvc1/4/Untitled%203.png)
+    ![Untitled3.png](image/4/Untitled%203.png)
 
     - 컨트롤러가 `ModelView`를 반환하지 않고, `ViewName`만 반환한다.
 
@@ -641,7 +641,7 @@
 
 - V5 구조
 
-    ![Untitled4.png](../image/sprimgmvc1/4/Untitled%204.png)
+    ![Untitled4.png](image/4/Untitled%204.png)
 
     - 핸들러 어댑터: 다양한 종류의 컨트롤러를 호출할 수 있다.
     - 핸들러: 컨트롤러의 이름을 더 넓은 범위인 핸들러로 변경했다.

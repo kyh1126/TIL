@@ -4,11 +4,11 @@
 
 - 직접 만든 MVC 프레임워크 구조
 
-![Untitled.png](../image/sprimgmvc1/5/Untitled.png)
+![Untitled.png](image/5/Untitled.png)
 
 - SpringMVC 구조
 
-![Untitled1.png](../image/sprimgmvc1/5/Untitled%201.png)
+![Untitled1.png](image/5/Untitled%201.png)
 
 - **직접 만든 프레임워크 스프링 MVC 비교**
     - FrontController → DispatcherServlet

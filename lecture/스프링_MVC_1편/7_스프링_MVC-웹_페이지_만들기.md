@@ -49,7 +49,7 @@
 
 - 서비스 제공 흐름
 
-    ![Untitled.png](../image/sprimgmvc1/7/Untitled.png)
+    ![Untitled.png](image/7/Untitled.png)
 
 
 ## 상품 도메인 개발
@@ -833,7 +833,7 @@
 
 - 전체 흐름
 
-    ![Untitled1.png](../image/sprimgmvc1/7/Untitled%201.png)
+    ![Untitled1.png](image/7/Untitled%201.png)
 
     - POST 등록 후 새로 고침: 웹 브라우저의 새로 고침은 마지막에 서버에 전송한 데이터를 다시 전송한다.
 
@@ -843,7 +843,7 @@
     - 새로 고침 문제를 해결하려면 상품 저장 후, 상품 상세 화면으로 리다이렉트를 호출해주면 된다.
     - 이후 새로 고침을 해도 상품 상세 화면으로 이동하게 되므로 새로 고침 문제를 해결할 수 있다.
 
-    ![Untitled2.png](../image/sprimgmvc1/7/Untitled%202.png)
+    ![Untitled2.png](image/7/Untitled%202.png)
 
 
 ## RedirectAttributes
