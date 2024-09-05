@@ -166,9 +166,9 @@
                 this.sourceAccountId = sourceAccountId;
                 this.targetAccountId = targetAccountId;
                 this.money = money;
-                requireNonNul1(sourceAccountId);
-                requireNonNul1(targetAccountId);
-                requireNonNul1(money);
+                requireNonNull(sourceAccountId);
+                requireNonNull(targetAccountId);
+                requireNonNull(money);
                 requireGreaterThan(money, 0);
             }
         }
