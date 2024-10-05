@@ -6,7 +6,7 @@
 
 - 스프링에 대한 오해
     
-    😭 스프링은 `@Controller`, `@Service`, `@Repository`만 기계적으로 찍어내는 개발 방법이다.
+    😭 스프링은 `@Controller`, `@Service`, `@Repository`만 기계적으로 찍어내는 개발 방법이다.
     
 - 스프링 애플리케이션의 빈이 존재하는 계층 구조
     - 3개의 전형적인(stereotype) 애노테이션을 사용하는 애플리케이션 빈

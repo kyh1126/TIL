@@ -123,7 +123,7 @@ go: go.mod file not found in current directory or any parent directory; see 'go 
 - go 모듈: `go.mod`에 리스트 된 특별한 모듈 의존성을 사용하여 import 문제를 해결한다.
     - go modules이 생성된 주요한 동기는, 다른 개발자들에 의해 작성된 코드를 편하게 사용하기 위함이다.
     - 직접적인 종속성이 있는 패키지만 기록된다.
-        - `go.mod`안에 제공되지 않은 패키지 import에 직면하면 `go` 커맨드는 패키지를 자동으로 찾아서 최신 버전으로 `go.mod`에 추가한다.
+        - `go.mod`안에 제공되지 않은 패키지 import에 직면하면 `go` 커맨드는 패키지를 자동으로 찾아서 최신 버전으로 `go.mod`에 추가한다.
     - 다시 `go test`를 실행하게 되었을 경우, go는 위에서 했던 설치 작업을 반복하지 않는다.
         - `go.mod` 파일이 최신 상태이며, 다운로드된 모듈은 로컬에 캐싱이 되어있기 때문이다. ($GOPATH/pkg/mod)
             

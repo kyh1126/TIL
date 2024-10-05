@@ -64,7 +64,7 @@
 ---
 
 - 컨트롤러: 너무 적은 것보다는 너무 많은 게 낫다.
-- 😭 AccountController를 하나 만들어서 계좌와 관련된 모든 요청을 받는 것
+- 😭 AccountController를 하나 만들어서 계좌와 관련된 모든 요청을 받는 것
     
     ```java
     package io.reflectoring.buckpal.adapter.web;
@@ -100,7 +100,7 @@
 - 모든 연산을 단일 컨트롤러에 넣는 것이 데이터 구조의 재활용을 촉진한다.
     - AccountResource가 모든 연산에 필요한 모든 데이터를 담고 있는 큰 통
         - id는 create 연산에서는 필요없기 때문에 도움이 되기보다는 헷갈릴 수 있다.
-- 😃 별도의 패키지 안에 별도의 컨트롤러를 만드는 방식 → 가급적 메서드와 클래스명은 유스케이스를 최대한 반영해서 지어야 한다.
+- 😃 별도의 패키지 안에 별도의 컨트롤러를 만드는 방식 → 가급적 메서드와 클래스명은 유스케이스를 최대한 반영해서 지어야 한다.
     
     ```java
     package io.reflectoring.buckpal.adapter.in.web;
