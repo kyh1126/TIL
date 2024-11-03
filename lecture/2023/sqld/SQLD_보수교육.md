@@ -52,9 +52,9 @@
 
 - 사원이라는 개념스키마는 사원을 보는 사용자 개개인에 따라서 관리직 사원, 생산직 사원, 노조에 가입한 사원, 노조에 비 가입한 사원 등으로 다를 수가 있는데(외부 스키마), 데이터를 정련(Refine)해 나가는 과정에서 동음이의어, 이음동의어 및 중복된 자료가 통합되어진다.
 
-![Untitled](./image/sqld/Untitled.png)
+![Untitled](image/sqld/Untitled.png)
 
-![Untitled](./image/sqld/Untitled%201.png)
+![Untitled](image/sqld/Untitled%201.png)
 
 # 2. 데이터베이스 관계원리
 
@@ -102,16 +102,16 @@
 
 - 이진관계(Binary Relationship)
     
-    ![Untitled](./image/sqld/Untitled%202.png)
+    ![Untitled](image/sqld/Untitled%202.png)
     
 - N-ary관계
     - 관계까 다대다(Many to Many)일 때 교차개체를 사용하여 일대다로 만들어줌.
     
-    ![Untitled](./image/sqld/Untitled%203.png)
+    ![Untitled](image/sqld/Untitled%203.png)
     
 - 링 관계
     
-    ![Untitled](./image/sqld/Untitled%204.png)
+    ![Untitled](image/sqld/Untitled%204.png)
     
 
 - 관계추출 사례
@@ -135,11 +135,11 @@
 - 모집단: 원소들의 집합이며, 정점들의 집합에 의해 그래프에 표현
 - 선형 그래프: 세 개의 관계성을 묘사
     
-    ![Untitled](./image/sqld/Untitled%205.png)
+    ![Untitled](image/sqld/Untitled%205.png)
     
 - 비 선형 그래프: 세 개 이상의 관계성을 묘사
     
-    ![Untitled](./image/sqld/Untitled%206.png)
+    ![Untitled](image/sqld/Untitled%206.png)
     
 
 ### 2) 그래프 관계의 분류
@@ -149,17 +149,17 @@
 - 반사 관계: aRa
     - 관계성에서 주체와 객체가 동일
     
-    ![Untitled](./image/sqld/Untitled%207.png)
+    ![Untitled](image/sqld/Untitled%207.png)
     
 - 대칭관계: aRb = bRa
     - 어떤 관계성에서 주체와 객체를 서로 바꾸었을 때 또 다른 참인 관계성이 생길 경우
     
-    ![Untitled](./image/sqld/Untitled%208.png)
+    ![Untitled](image/sqld/Untitled%208.png)
     
 - 전이관계: aRb, bRc, cRa
     - b는 aRb의 객체이고 bRc의 주체
     
-    ![Untitled](./image/sqld/Untitled%209.png)
+    ![Untitled](image/sqld/Untitled%209.png)
     
 
 - 반사관계: 사원(관리자)이 사원을 관리한다.
@@ -182,7 +182,7 @@
 - 순서 파일 (Ordered File)
     - 파일에서 레코드나 세그먼트의 위치가 그것들의 키에 의해 결정
     
-    ![Untitled](./image/sqld/Untitled%2010.png)
+    ![Untitled](image/sqld/Untitled%2010.png)
     
 
 - 키(Key)
@@ -200,12 +200,12 @@
 - 레코드 안에 다음 레코드의 위치를 가리키는 포인터가 있고, 마지막 레코드에 터미널 플래그 표시(*)가 됨.
 - 레코드의 첨가 또는 삭제가 쉬움
     
-    ![Untitled](./image/sqld/Untitled%2011.png)
+    ![Untitled](image/sqld/Untitled%2011.png)
     
 - aPb: Point a = loc b
     - 레코드a는 레코드b보다 먼저 위치하기 때문에 레코드a의 포인터 필드에서 레코드b의 위치를 찾을 수 있다.
     
-    ![Untitled](./image/sqld/Untitled%2012.png)
+    ![Untitled](image/sqld/Untitled%2012.png)
     
 
 - 연결리스트와 관련된 데이터베이스 접근방법: DAM (Direct Access Method)
@@ -220,7 +220,7 @@
 - 큐: FIFO 선입선출
 - 스택: LIFO 후입선출
 
-![Untitled](./image/sqld/Untitled%2013.png)
+![Untitled](image/sqld/Untitled%2013.png)
 
 ## 다. 테이블과 행렬
 
@@ -235,7 +235,7 @@
 - 행: 같은 수평선상의 모든 데이터
 - 열: 같은 수직선상에 배열된 모든 데이터
 
-![Untitled](./image/sqld/Untitled%2014.png)
+![Untitled](image/sqld/Untitled%2014.png)
 
 - 유사용어
     - 행: Row, Record, 인스턴스, Occurrence, Object
@@ -254,14 +254,14 @@
 - 행 내의 Cell의 위치는 중요
 - 행렬내의 행의 위치는 중요하지 않음
 
-![Untitled](./image/sqld/Untitled%2015.png)
+![Untitled](image/sqld/Untitled%2015.png)
 
 - 파일은 여러 개의 레코드로 되어있으며, 각 레코드는 키 필드와 데이터필드로 나누어져 있다. 데이터필드는 값을 가지고 있는데 이러한 데이터필드를 데이터 셀 이라고 한다.
     - ex> 고객 F = 고객번호(키이)(NUMBER(4)) + 고객명(CHAR(10)) + 고객주소(CHAR(20)) + 고객전화번호(NUMBER(11)) + …
 
-![Untitled](./image/sqld/Untitled%2016.png)
+![Untitled](image/sqld/Untitled%2016.png)
 
-![Untitled](./image/sqld/Untitled%2017.png)
+![Untitled](image/sqld/Untitled%2017.png)
 
 # 3. 데이터 모델 및 모델링
 
@@ -302,7 +302,7 @@
 - 데이터의 관계가 테이블로 표현됨
 - E.F Codd에 의해 개념도입
 
-![Untitled](./image/sqld/Untitled%2018.png)
+![Untitled](image/sqld/Untitled%2018.png)
 
 ### 4) 네트워크형 데이터 모델 (Network Model)
 
@@ -311,7 +311,7 @@
 - Hierarchical Data Model 의 단점을 보완하여 데이터의 구조를 레코드와 링크에 의해 망(network) 형태로 표현
 - 사용하기 복잡하고 어려움
 
-![Untitled](./image/sqld/Untitled%2019.png)
+![Untitled](image/sqld/Untitled%2019.png)
 
 ### 5) 계층형 데이터 모델 (Hierarchical Model)
 
@@ -322,7 +322,7 @@
 - 모델링 규칙에서 Parent - Child 의 관계까 1:M일 경우 효율적이나 M:1 의 표현은 지원하지 않음
 - Non Hierarchical Data의 표현이 어려움
 
-![Untitled](./image/sqld/Untitled%2020.png)
+![Untitled](image/sqld/Untitled%2020.png)
 
 ### 6) 객체관계형 데이터 모델 (Object-Relational Model)
 
@@ -335,7 +335,7 @@
 - 복잡한 DB Schema Modeling에 대하여 Encapsulation과 Inheritance의 이점 추가
     - Table에 Column과 Procedure를 동시에 가질 수 있음
 
-![Untitled](./image/sqld/Untitled%2021.png)
+![Untitled](image/sqld/Untitled%2021.png)
 
 ### 7) 객체지향형 데이터 모델 (Object-Oriented Model)
 
@@ -348,7 +348,7 @@
 - Poly-Morphism (다형성)
     - 타 프로그램에서 넘어오는 변수의 Type을 해당 프로그램에서 취사선택하여 사용할 수 있음
 
-![Untitled](./image/sqld/Untitled%2022.png)
+![Untitled](image/sqld/Untitled%2022.png)
 
 ## 나. 데이터 모델링
 
@@ -368,9 +368,9 @@
 5. 사용할 DBMS에 맞도록 개조
 6. 키를 단순화 함
 
-![Untitled](./image/sqld/Untitled%2023.png)
+![Untitled](image/sqld/Untitled%2023.png)
 
-![Untitled](./image/sqld/Untitled%2024.png)
+![Untitled](image/sqld/Untitled%2024.png)
 
 ### 2) 네트워크형 데이터 모델링
 
@@ -387,9 +387,9 @@
 9. Set 실행모드의 설정: Chain 방식, Poiner Array 방식
 10. Record 위치모드의 설정
 
-![Untitled](./image/sqld/Untitled%2025.png)
+![Untitled](image/sqld/Untitled%2025.png)
 
-![Untitled](./image/sqld/Untitled%2026.png)
+![Untitled](image/sqld/Untitled%2026.png)
 
 - Online Data검색 및 조작방법
     - CALC 방법
@@ -405,9 +405,9 @@
 
 ---
 
-![Untitled](./image/sqld/Untitled%2027.png)
+![Untitled](image/sqld/Untitled%2027.png)
 
-![Untitled](./image/sqld/Untitled%2028.png)
+![Untitled](image/sqld/Untitled%2028.png)
 
 ### 4) 객체관계형 데이터 모델링
 
@@ -415,10 +415,10 @@
 
 - 관계형 데이터 모델을 제작한 후에, 객체관계형 모델로 변환함.
     
-    ![Untitled](./image/sqld/Untitled%2029.png)
+    ![Untitled](image/sqld/Untitled%2029.png)
     
 
-![Untitled](./image/sqld/Untitled%2030.png)
+![Untitled](image/sqld/Untitled%2030.png)
 
 ### 5) 객체지향 모델링
 
@@ -428,7 +428,7 @@
 - UML(Unified Modeling Language)을 사용하여 업무를 분석, 설계하여 시스템으로 변환함.
 - UML에서 전통적인 데이터 모델 부분을 포함하고 있는 다이어그램이 클래스 다이어그램임.
 
-![Untitled](./image/sqld/Untitled%2031.png)
+![Untitled](image/sqld/Untitled%2031.png)
 
 ## 다. 데이터 모델링 주요 이슈
 
@@ -445,7 +445,7 @@
     - X, Y는 복합 애트리뷰트일 수 있음
 - 도해
     
-    ![Untitled](./image/sqld/Untitled%2032.png)
+    ![Untitled](image/sqld/Untitled%2032.png)
     
 
 ### 2) 정규화(Normalization)
@@ -471,18 +471,18 @@
 
 - 정규화(Normalization)
     
-    ![Untitled](./image/sqld/Untitled%2033.png)
+    ![Untitled](image/sqld/Untitled%2033.png)
     
 
-![Untitled](./image/sqld/Untitled%2034.png)
+![Untitled](image/sqld/Untitled%2034.png)
 
-![Untitled](./image/sqld/Untitled%2035.png)
+![Untitled](image/sqld/Untitled%2035.png)
 
-![Untitled](./image/sqld/Untitled%2036.png)
+![Untitled](image/sqld/Untitled%2036.png)
 
-![Untitled](./image/sqld/Untitled%2037.png)
+![Untitled](image/sqld/Untitled%2037.png)
 
-![Untitled](./image/sqld/Untitled%2038.png)
+![Untitled](image/sqld/Untitled%2038.png)
 
 # 4. 파일과 데이터베이스 시스템
 
@@ -539,15 +539,15 @@ C. 직접 파일(DAM: Direct Accesss Method File)
 - 레코드를 채취하는데 사용되는 탐색 매개 변수와 직접 액세스 매커니즘의 물리적 기능이 밀접하게 관련되어 있음.
 - 인덱스된 파일 구성에서는 레코드의 현 위치정보를 제공해 주기 위해 인덱스 테이블이 사용되지만, 직접 화일에서는 이와는 달리 레코드 주소를 제공해 주기 위해 주소연산 루틴(ex> 해슁)이 사용됨.
 
-![Untitled](./image/sqld/Untitled%2039.png)
+![Untitled](image/sqld/Untitled%2039.png)
 
-![Untitled](./image/sqld/Untitled%2040.png)
+![Untitled](image/sqld/Untitled%2040.png)
 
 ## 나. 데이터베이스 시스템의 구조
 
 ---
 
-![Untitled](./image/sqld/Untitled%2041.png)
+![Untitled](image/sqld/Untitled%2041.png)
 
 - DBMS는 테이블(또는 파일)내의 로우(행; 레코드)에 대하여 Data를 삽입하고, 검색, 갱신 또는 삭제시키는 작업을 하며, Database내의 테이블 또는 파일을 추가 등록하거나 삭제한다.
 - 파일 시스템에서는 반드시 응용 프로그램을 통하여야만 데이터를 액세스하지만, DBMS는 응용 프로그램이 없이도 데이터를 액세스 할 수 있다.
@@ -799,15 +799,15 @@ B. 특성
 - 통신망 부하의 증가
 - 설치비용, 유지보수 비용의 증가
 
-![Untitled](./image/sqld/Untitled%2042.png)
+![Untitled](image/sqld/Untitled%2042.png)
 
-![Untitled](./image/sqld/Untitled%2043.png)
+![Untitled](image/sqld/Untitled%2043.png)
 
-![Untitled](./image/sqld/Untitled%2044.png)
+![Untitled](image/sqld/Untitled%2044.png)
 
-![Untitled](./image/sqld/Untitled%2045.png)
+![Untitled](image/sqld/Untitled%2045.png)
 
-![Untitled](./image/sqld/Untitled%2046.png)
+![Untitled](image/sqld/Untitled%2046.png)
 
 # 5. 구조적 질의어(SQL)
 
@@ -817,7 +817,7 @@ B. 특성
 
 ---
 
-![Untitled](./image/sqld/Untitled%2047.png)
+![Untitled](image/sqld/Untitled%2047.png)
 
 - 표준화(All ata Base)
     - 모든 관계형 DBMS에서 동일하게 사용될 수 있다.
@@ -839,27 +839,27 @@ B. 특성
 
 ---
 
-![Untitled](./image/sqld/Untitled%2048.png)
+![Untitled](image/sqld/Untitled%2048.png)
 
-![Untitled](./image/sqld/Untitled%2049.png)
+![Untitled](image/sqld/Untitled%2049.png)
 
-![Untitled](./image/sqld/Untitled%2050.png)
+![Untitled](image/sqld/Untitled%2050.png)
 
-![Untitled](./image/sqld/Untitled%2051.png)
+![Untitled](image/sqld/Untitled%2051.png)
 
-![Untitled](./image/sqld/Untitled%2052.png)
+![Untitled](image/sqld/Untitled%2052.png)
 
-![Untitled](./image/sqld/Untitled%2053.png)
+![Untitled](image/sqld/Untitled%2053.png)
 
 ### 2) 연산자(Operator)
 
 ---
 
-![Untitled](./image/sqld/Untitled%2054.png)
+![Untitled](image/sqld/Untitled%2054.png)
 
-![Untitled](./image/sqld/Untitled%2055.png)
+![Untitled](image/sqld/Untitled%2055.png)
 
-![Untitled](./image/sqld/Untitled%2056.png)
+![Untitled](image/sqld/Untitled%2056.png)
 
 ### 3) 명령어
 
@@ -884,62 +884,62 @@ B. 특성
 
 ---
 
-![Untitled](./image/sqld/Untitled%2057.png)
+![Untitled](image/sqld/Untitled%2057.png)
 
-![Untitled](./image/sqld/Untitled%2058.png)
+![Untitled](image/sqld/Untitled%2058.png)
 
-![Untitled](./image/sqld/Untitled%2059.png)
+![Untitled](image/sqld/Untitled%2059.png)
 
-![Untitled](./image/sqld/Untitled%2060.png)
+![Untitled](image/sqld/Untitled%2060.png)
 
-![Untitled](./image/sqld/Untitled%2061.png)
+![Untitled](image/sqld/Untitled%2061.png)
 
-![Untitled](./image/sqld/Untitled%2062.png)
+![Untitled](image/sqld/Untitled%2062.png)
 
-![Untitled](./image/sqld/Untitled%2063.png)
+![Untitled](image/sqld/Untitled%2063.png)
 
-![Untitled](./image/sqld/Untitled%2064.png)
+![Untitled](image/sqld/Untitled%2064.png)
 
-![Untitled](./image/sqld/Untitled%2065.png)
+![Untitled](image/sqld/Untitled%2065.png)
 
-![Untitled](./image/sqld/Untitled%2066.png)
+![Untitled](image/sqld/Untitled%2066.png)
 
 ### 2) 명령어 실습-2: SQL 문을 완성하고 실행시켜 보기
 
 ---
 
-![Untitled](./image/sqld/Untitled%2067.png)
+![Untitled](image/sqld/Untitled%2067.png)
 
-![Untitled](./image/sqld/Untitled%2068.png)
+![Untitled](image/sqld/Untitled%2068.png)
 
-![Untitled](./image/sqld/Untitled%2069.png)
+![Untitled](image/sqld/Untitled%2069.png)
 
-![Untitled](./image/sqld/Untitled%2070.png)
+![Untitled](image/sqld/Untitled%2070.png)
 
-![Untitled](./image/sqld/Untitled%2071.png)
+![Untitled](image/sqld/Untitled%2071.png)
 
-![Untitled](./image/sqld/Untitled%2072.png)
+![Untitled](image/sqld/Untitled%2072.png)
 
-![Untitled](./image/sqld/Untitled%2073.png)
+![Untitled](image/sqld/Untitled%2073.png)
 
-![Untitled](./image/sqld/Untitled%2074.png)
+![Untitled](image/sqld/Untitled%2074.png)
 
-![Untitled](./image/sqld/Untitled%2075.png)
+![Untitled](image/sqld/Untitled%2075.png)
 
-![Untitled](./image/sqld/Untitled%2076.png)
+![Untitled](image/sqld/Untitled%2076.png)
 
-![Untitled](./image/sqld/Untitled%2077.png)
+![Untitled](image/sqld/Untitled%2077.png)
 
-![Untitled](./image/sqld/Untitled%2078.png)
+![Untitled](image/sqld/Untitled%2078.png)
 
-![Untitled](./image/sqld/Untitled%2079.png)
+![Untitled](image/sqld/Untitled%2079.png)
 
-![Untitled](./image/sqld/Untitled%2080.png)
+![Untitled](image/sqld/Untitled%2080.png)
 
-![Untitled](./image/sqld/Untitled%2081.png)
+![Untitled](image/sqld/Untitled%2081.png)
 
-![Untitled](./image/sqld/Untitled%2082.png)
+![Untitled](image/sqld/Untitled%2082.png)
 
-![Untitled](./image/sqld/Untitled%2083.png)
+![Untitled](image/sqld/Untitled%2083.png)
 
-![Untitled](./image/sqld/Untitled%2084.png)
+![Untitled](image/sqld/Untitled%2084.png)
