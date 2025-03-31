@@ -77,6 +77,6 @@
     - 실행
         - assertNow
             
-            ![image.png](26%E1%84%80%E1%85%A1%E1%86%BC%20%E1%84%8B%E1%85%A6%E1%84%85%E1%85%A5%20%E1%84%92%E1%85%A2%E1%86%AB%E1%84%83%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A5%202%20-%20assert,%20revert,%20require%20(0%201c7b5a48de4480288bdddbbf21f1977c/image.png)
+            ![image.png](./image/26/image.png)
             
             - output의 마지막 `00000001` 부분이 Panic의 `0x01` 에러다.
