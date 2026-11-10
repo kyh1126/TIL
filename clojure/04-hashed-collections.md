@@ -3,7 +3,7 @@
 - 학습일: 2026-11-11
 - 학습 자료: [공식 Hashed Collections 가이드](https://clojure.org/guides/learn/hashed_colls)
 - 실습: **4/4 정답 (100점)**
-- 목표: Map/Set 불변성, 중첩 Map 조회, Set 중복 및 순서를 이해한다.
+- 목표: Map/Set 불변성, 중첩 Map 조회, Set의 중복 제거를 이해한다.
 
 ## 1. Map과 Keyword
 
@@ -34,7 +34,7 @@
 
 `assoc`와 `dissoc`는 원본을 변경하지 않고 새 Map을 반환한다.
 
-## 3. Set, conj, disj, 순서
+## 3. Set, conj, disj
 
 ```clojure
 (def roles #{:admin :user})
@@ -42,19 +42,9 @@
 (count updated)               ;; => 3
 (contains? updated :viewer)   ;; => true
 (disj roles :admin)           ;; => #{:user}
-(sorted-set 30 10 20)         ;; 정렬된 Set: #{10 20 30}
 ```
 
-Set은 중복을 허용하지 않는다. 해시 Set의 순회 순서는 보장되지 않는다.
-
-### Java HashSet과 비교하면서 질문했던 내용
-
-- Java `HashSet`은 `HashMap` 기반이며 순회 순서를 보장하지 않는다.
-- 순서가 **보장되지 않는다**는 말은 매번 무작위로 섞인다는 뜻이 아니다.
-- Java `LinkedHashSet`은 삽입 순서, `TreeSet`은 비교 기준 정렬 순서를 제공한다.
-- Java의 일반 `HashSet`은 JVM 메모리에 존재하며 자동으로 디스크에 영구 저장되는 것은 아니다.
-
-참조: [Oracle Java 17 HashSet API](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/HashSet.html).
+Set은 중복된 값을 허용하지 않으며, `conj`와 `disj`로 원소를 추가하거나 제거한 새로운 Set을 반환한다.
 
 ## 4. 중첩 Map: get-in과 assoc-in
 
@@ -131,12 +121,12 @@ Set은 중복을 허용하지 않는다. 해시 Set의 순회 순서는 보장�
 
 - [x] `assoc` / `assoc-in`의 불변성
 - [x] Map 기본값과 없는 키 이해
-- [x] Set 중복 제거 및 순서 비보장
+- [x] Set의 중복 제거와 불변성
 - [x] 중첩 조회 결과 Vector 파악
 - [ ] 중첩 Vector와 평탄화 추가 검증
 - [ ] `contains?`가 Map에서는 **키**, Set에서는 **원소**, Vector에서는 **인덱스** 존재를 검사한다는 점 복습
 
-Java DTO, `HashMap`, JSON으로 전환할 때 **원본 상태 변경 여부·자료구조의 중첩 깊이·반환 순서**를 테스트로 확인한다.
+Java DTO, `HashMap`, JSON으로 전환할 때 **원본 상태 변경 여부·자료구조의 중첩 깊이·반환 데이터**를 테스트로 확인한다.
 
 ## 8. 다음 학습
 
@@ -146,4 +136,3 @@ Java DTO, `HashMap`, JSON으로 전환할 때 **원본 상태 변경 여부·자
 
 - [Clojure 공식 Hashed Collections](https://clojure.org/guides/learn/hashed_colls)
 - [Clojure Data Structures](https://clojure.org/reference/data_structures)
-- [Oracle Java HashSet](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/HashSet.html)
