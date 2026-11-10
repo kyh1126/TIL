@@ -35,3 +35,9 @@ Today I Learned
 - [TDD, 클린코드 2021](https://github.com/kyh1126/TIL/blob/main/lecture/TDD_%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C_2021.md)
 
 - [스프링 MVC 2편 - 백엔드 웹 개발 핵심 기술](https://github.com/kyh1126/TIL/blob/main/lecture/%EC%8A%A4%ED%94%84%EB%A7%81_MVC_2%ED%8E%B8.md)
+
+## Clojure
+
+Clojure 공식 학습 가이드를 바탕으로 Java/Spring Boot 마이그레이션 관점에서 학습한 내용을 기록합니다.
+
+- [01. Syntax — 기본 문법과 함수 정의](clojure/01-syntax.md) — 2026-11-11 · 실습 100/100
