@@ -45,3 +45,4 @@ Clojure 공식 학습 가이드를 바탕으로 Java/Spring Boot 마이그레이
 - [03. Sequential Collections — Vector, List, Sequence](clojure/03-sequential-collections.md) — 2026-11-11 · 기본 2/4, 보충 2/3 (중첩 Vector 보완)
 - [04. Hashed Collections — Map, Set과 중첩 데이터](clojure/04-hashed-collections.md) — 2026-11-11 · 실습 4/4 (100점)
 - [05. Sequence Processing — map, filter, reduce, Lazy Evaluation](clojure/05-sequence-processing.md) — 2026-11-11 · 실습 5/5 (100점), 지연 평가 설명 보충
+- [06. Flow Control — if, when, cond, Truthiness와 nil](clojure/06-flow-control.md) — 2026-11-11 · 최초 3/5 → 보충 2/3 → 최종 1/1 통과
