@@ -46,3 +46,4 @@ Clojure 공식 학습 가이드를 바탕으로 Java/Spring Boot 마이그레이
 - [04. Hashed Collections — Map, Set과 중첩 데이터](clojure/04-hashed-collections.md) — 2026-11-11 · 실습 4/4 (100점)
 - [05. Sequence Processing — map, filter, reduce, Lazy Evaluation](clojure/05-sequence-processing.md) — 2026-11-11 · 실습 5/5 (100점), 지연 평가 설명 보충
 - [06. Flow Control — if, when, cond, Truthiness와 nil](clojure/06-flow-control.md) — 2026-11-11 · 최초 3/5 → 보충 2/3 → 최종 1/1 통과
+- [07. Exception Handling — try, catch, finally, ex-info/ex-data](clojure/07-exception-handling.md) — 2026-11-11 · 최초 4/5 → 보충 1/2 → 최종 1/1 통과
