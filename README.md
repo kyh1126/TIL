@@ -41,4 +41,4 @@ Today I Learned
 Clojure 공식 학습 가이드를 바탕으로 Java/Spring Boot 마이그레이션 관점에서 학습한 내용을 기록합니다.
 
 - [01. Syntax — 기본 문법과 함수 정의](clojure/01-syntax.md) — 2026-11-11 · 실습 100/100
-- [02. Functions — let, fn과 lexical scope](clojure/02-functions.md) — 2026-11-11 · 실습 2/3 (스코프 복습)
+- [02. Functions — let, fn과 lexical scope](clojure/02-functions.md) — 2026-11-11 · 실습 2/3 → 스코프 복습 3/3 통과
